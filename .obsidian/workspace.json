@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3939fb4ebbe5a6c4",
+        "id": "0b37d2588d4c138b",
         "type": "tabs",
         "children": [
           {
-            "id": "7aad59759a272f70",
+            "id": "bb5eecb395deb95b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -165,7 +165,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -181,7 +182,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7aad59759a272f70",
+  "active": "bb5eecb395deb95b",
   "lastOpenFiles": [
     "Appunti/Reti di Calcolatori/Glossario.md",
     "TODO.canvas",
