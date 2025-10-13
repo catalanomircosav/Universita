@@ -1,0 +1,203 @@
+{
+  "main": {
+    "id": "b0c618d097ff2c30",
+    "type": "split",
+    "children": [
+      {
+        "id": "3939fb4ebbe5a6c4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7aad59759a272f70",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti/Reti di Calcolatori/Fondamenti di Reti/Internet - una panoramica.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Internet - una panoramica"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "00d6d968b585838d",
+    "type": "split",
+    "children": [
+      {
+        "id": "aace81d5ba06cfe9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cd33f40c14a11b3b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Esplora risorse"
+            }
+          },
+          {
+            "id": "b0fb6117ccf1b76b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Ricerca"
+            }
+          },
+          {
+            "id": "aa4a63c1d1236ebe",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Segnalibri"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "11d4287befb9fcba",
+    "type": "split",
+    "children": [
+      {
+        "id": "ac760762e560a2ed",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "322ec00c698d7cea",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Riferimenti"
+            }
+          },
+          {
+            "id": "b58e18205f685318",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Collegamenti in uscita"
+            }
+          },
+          {
+            "id": "5469a277d7c6963c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etichette"
+            }
+          },
+          {
+            "id": "029367460c7aac7e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Benvenuto.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Struttura di Benvenuto"
+            }
+          },
+          {
+            "id": "30d565eb0b85799f",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Apri selezione rapida": false,
+      "graph:Apri vista grafo": false,
+      "canvas:Crea nuova lavagna": false,
+      "daily-notes:Apri nota del giorno": false,
+      "templates:Inserisci modello": false,
+      "command-palette:Apri riquadro comandi": false,
+      "bases:Create new base": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "7aad59759a272f70",
+  "lastOpenFiles": [
+    "Appunti/Reti di Calcolatori/Glossario.md",
+    "TODO.canvas",
+    "Appunti/Reti di Calcolatori/Fondamenti di Reti/Internet - una panoramica.md",
+    "Appunti/Reti di Calcolatori/Senza nome",
+    "Appunti/Reti di Calcolatori/Fondamenti di Reti",
+    "Appunti/Senza nome",
+    "Senza nome.canvas",
+    "Appunti/Fondamenti di Fisica",
+    "Appunti/Reti di Calcolatori",
+    "Senza nome.md",
+    "Archivio",
+    "Progetti",
+    "Libri",
+    "Appunti",
+    "Appunti/Interazione Uomo Macchina",
+    "Benvenuto.md"
+  ]
+}
