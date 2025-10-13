@@ -29,3 +29,5 @@ ___
 I *sistemi terminali* appartenenti a una **internet** comunicano tramite switch o router che si trovano tra il sistema di partenza e quello di destinazione. In base al metodo che si utilizza, si possono distinguere due tipi di reti:
 - <u>rete a commutazione di circuito</u>: Una rete a commutazione di circuito è sempre disponibile tramite un collegamento dedicato chiamato circuito; Lo switch che collega i due dispositivi può abilitare o disabilitare questo circuito. (es. reti telefoniche)
 - <u>rete a commutazione di pacchetto</u>: Una rete a commutazione di pacchetto è una rete in cui non esiste un collegamento continuo tra due dispositivi, ma i due comunicano inviandosi pacchetti; gli switch sono in grado di memorizzare i pacchetti (inserirli in una coda) ed elaborarli uno ad uno; questo comporta però problemi di **latenza**.
+___
+##
