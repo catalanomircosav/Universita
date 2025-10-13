@@ -41,3 +41,5 @@ Il <u><b>Throughput</b></u> indica quanto velocemente si riescono ad inviare i d
 > [!example] Esempio
 > Se il link a un rate di 1Mbps, ma i dispositivi connessi possono gestire al massimo 200kbps, il link non andra' oltre i 200kbps.
 
+La formula per calcolare il **throughput** sarà quindi:
+$$\text{Throughput} = min\{T_1, T_2, \dots, T_n\}$$
