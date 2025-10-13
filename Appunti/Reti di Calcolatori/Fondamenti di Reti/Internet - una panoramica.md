@@ -30,4 +30,14 @@ I *sistemi terminali* appartenenti a una **internet** comunicano tramite switch 
 - <u>rete a commutazione di circuito</u>: Una rete a commutazione di circuito è sempre disponibile tramite un collegamento dedicato chiamato circuito; Lo switch che collega i due dispositivi può abilitare o disabilitare questo circuito. (es. reti telefoniche)
 - <u>rete a commutazione di pacchetto</u>: Una rete a commutazione di pacchetto è una rete in cui non esiste un collegamento continuo tra due dispositivi, ma i due comunicano inviandosi pacchetti; gli switch sono in grado di memorizzare i pacchetti (inserirli in una coda) ed elaborarli uno ad uno; questo comporta però problemi di **latenza**.
 ___
-##
+# **Capacità e Prestazioni delle Reti**
+Il concetto di *velocita' di rete* e' molto ampio e coinvolge vari fattori che influiscono sulle *performance* di una rete. Nel caso di una **rete a commutazione di pacchetto**, le metriche che ne determinano le prestazioni sono: l'<u><b>ampiezza di banda</b></u>, il <u><b>bit rate</b></u>, <u><b>throughput</b></u> e <u><b>perdita di pacchetti</b></u>.
+## **Ampiezza di banda e bit rate**
+Con il termine <u><b>ampiezza di banda</b></u> si indicano due concetti leggermente diversi ma comunque correlati:
+- Se si intende caratterizzare un sistema trasmissivo, l'ampiezza di banda e' la quantità in *Hz (Hertz)* che indica l'intervallo massimo (in frequenza) che un mezzo fisica consente di trasportare senza danneggiare il segnale in maniera irrecuperabile.
+- Se invece si vuole caratterizzare la velocita' di trasmissione, essa viene espressa in bit al secondo (*bps*, *bit per second*) e rappresenta il *transmission rate*, ovvero la quantità di bit al secondo che un certo link garantisce di trasmettere. Il bit rate dipende sia dalla banda che dalla **tecnica di trasmissione**. In generale e' comunque proporzionale alla banda in hertz.
+## **Throughput**
+Il <u><b>Throughput</b></u> indica quanto velocemente si riescono ad inviare i dati tramite una rete. **Il bit rate e il throughput non sono la stessa cosa**: il primo e' una misura **potenziale** della velocita', il secondo la velocita' **effettiva**.
+> [!example] Esempio
+> Se il link a un rate di 1Mbps, ma i dispositivi connessi possono gestire al massimo 200kbps, il link non andra' oltre i 200kbps.
+
