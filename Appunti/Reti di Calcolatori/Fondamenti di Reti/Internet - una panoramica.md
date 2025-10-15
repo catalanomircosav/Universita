@@ -44,6 +44,10 @@ Il <u><b>Throughput</b></u> indica quanto velocemente si riescono ad inviare i d
 La formula per calcolare il **throughput** sarà quindi:
 $$\text{Throughput} = min\{T_1, T_2, \dots, T_n\}$$
 ## **Latenza**
-La latenza definisce quanto tempo serve affinché' un intero messaggio arrivi completamente a destinazione dal momento in cui il primo bit parte dalla sorgente. Esistono 4 tipi di ritardi:
-- <u>ritardo di trasmissione</u>: il ritardo di trasmissione e' il tempo che ci mette ad arrivare l'ultimo pacchetto rispetto al primo: $\text{ritardo} = \text{(lunghezza del pacchetto)} / \text{(rate)}$
-- <u>ritardo di propagazione</u>: il ritardo di propagazione e' il tempo che serve ad un bit per viaggiare dal punto A al punto B nel mezzo di trasmissione.
+La latenza definisce quanto tempo serve affinché un intero messaggio arrivi completamente a destinazione dal momento in cui il primo bit parte dalla sorgente. Esistono 4 tipi di ritardi:
+- <u><b>ritardo di trasmissione</b></u>: il ritardo di trasmissione e' il tempo che ci mette ad arrivare l'ultimo pacchetto rispetto al primo: $\text{ritardo} = \text{(lunghezza del pacchetto)} / \text{(rate)}$
+- <u><b>ritardo di propagazione</b></u>: il ritardo di propagazione e' il tempo che serve ad un bit per viaggiare dal punto A al punto B nel mezzo di trasmissione: $\text{ritardo = (distanza) / (velocita' di propagazione)}$. **Maggiore e' il throughput, minore sara' il ritardo**.
+- <u><b>ritardo di elaborazione</b></u>: il ritardo di elaborazione e' il tempo che serve ad un router o a un sistema terminale perche' un router completi l'elaborazione di un pacchetto.
+- <u><b>ritardo di accodamento</b></u>: anche questo e' un ritardo del router e rappresenta il tempo in cui il pacchetto e' in coda in attesa di essere mandato.
+## **Perdita di pacchetti**
+Il numero di pacchetti persi durante la trasmissione influisce pesantemente sulle prestazioni della rete. Quando un router riceve un pacchetto mentre ne sta elaborando un altro, il pacchetto ricevuto deve essere memorizzato in un buffer di input, che ha però dimensioni limitate. Se in un determinato momento il buffer e' pieno, tutti i pacchetti inviati a quel router vengono persi.
