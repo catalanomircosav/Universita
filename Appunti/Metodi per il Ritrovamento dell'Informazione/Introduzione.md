@@ -19,5 +19,7 @@ L'interazione con i sistemi di ricerca varia in base al compito, competenza nel 
 E' importante fare distinzione tra **ricerca di informazione** e **ricerca esplorativa**:
 - la prima e' soddisfatta da pezzi discreti di informazione, come numeri, date, nomi, ecc.
 - la seconda invece e' divisa in due tipi:
-	- <u>learning</u>: richiede piu' di singole query-risposte e implica un processo complesso di scansione, lettura e sintesi di contenuti per formare una nuova comprensione.
+	- <u>learning</u>: richiede più di singole query-risposte e implica un processo complesso di scansione, lettura e sintesi di contenuti per formare una nuova comprensione.
 	- <u>investigating</u>: processo a lungo termine con multiple interazione e valutazione critica dei risultati prima di integrarli nelle basi di conoscenza.
+
+Il **sensemaking** e' un processo iterativo per formulare una rappresentazione concettuale da una vasta collezione, cui la maggior parte dello sforzo e' dedicata alla sintesi.
