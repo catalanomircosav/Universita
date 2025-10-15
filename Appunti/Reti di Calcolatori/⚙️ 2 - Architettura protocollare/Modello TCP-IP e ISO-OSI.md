@@ -8,4 +8,5 @@ Al giorno d'oggi, questa e' composta di 5 livelli.
 
 Ciascun dispositivo e' coinvolto con determinati livelli:
 - **gli host sono coinvolti in tutti e 5 i livelli**: l'host sorgente crea un messaggio a livello applicazione e lo trasmette ai livelli sottostanti fino al livello fisico affinché possa essere risalito fino al livello applicativo all'host destinatario.
-- **il router e' coinvolto solamente per tre livelli**: i livelli trasporto e applicazione non hanno senso di esistere perche' il router e' utilizzato solamente per scopi di instradamento.
+- **il router e' coinvolto solamente per tre livelli**: I livelli **rete**, **collegamento** e **fisico**. I livelli **trasporto** e **applicazione** non hanno senso di esistere perche' il router e' utilizzato solamente per scopi di instradamento.
+- **uno switch e' coinvolto solo in 2 livelli**: i livelli **collegamento** e **fisico**.
