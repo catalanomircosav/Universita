@@ -1,7 +1,7 @@
 #reti 
 ___
 # **Architettura TCP/IP**
-L'<u><b>architettura TCP/IP</b></u> e' una gerarchia di [protocolli](Glossario.md#protocollo) costituita da moduli che interagiscono fra di loro, ciascuno dei quali svolge funzioni specifiche per permettere la comunicazione in una rete.
+L'<u><b>architettura TCP/IP</b></u> e' una gerarchia di [protocolli](../Glossario.md#protocollo) costituita da moduli che interagiscono fra di loro, ciascuno dei quali svolge funzioni specifiche per permettere la comunicazione in una rete.
 **E' un'architettura gerarchica, il che significa che ciascun protocollo di livello superiore viene supportato dai livelli inferiori**, e viene definita come **stack protocollare TCP/IP**.
 Al giorno d'oggi, questa e' composta di 5 livelli.
 
