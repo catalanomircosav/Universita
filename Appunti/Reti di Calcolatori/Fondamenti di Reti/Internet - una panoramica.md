@@ -42,4 +42,8 @@ Il <u><b>Throughput</b></u> indica quanto velocemente si riescono ad inviare i d
 > Se il link a un rate di 1Mbps, ma i dispositivi connessi possono gestire al massimo 200kbps, il link non andra' oltre i 200kbps.
 
 La formula per calcolare il **throughput** sarà quindi:
-$\text{Throughput} = min\{T_1, T_2, \dots, T_n\}$
+$$\text{Throughput} = min\{T_1, T_2, \dots, T_n\}$$
+## **Latenza**
+La latenza definisce quanto tempo serve affinché' un intero messaggio arrivi completamente a destinazione dal momento in cui il primo bit parte dalla sorgente. Esistono 4 tipi di ritardi:
+- <u>ritardo di trasmissione</u>: il ritardo di trasmissione e' il tempo che ci mette ad arrivare l'ultimo pacchetto rispetto al primo: $\text{ritardo} = \text{(lunghezza del pacchetto)} / \text{(rate)}$
+- <u>ritardo di propagazione</u>: il ritardo di propagazione e' il tempo che serve ad un bit per viaggiare dal punto A al punto B nel mezzo di trasmissione.
