@@ -26,3 +26,10 @@ Si può affermare che il livello di rete e' responsabile della comunicazione e d
 Il protocollo principale a questo livello e' l'**IP** (*Internet Protocol*) che definisce il formato del **datagramma**. Fornisce anche il formato e la struttura degli indirizzi utilizzati in questo livello ed e' responsabile dell'inoltro di un pacchetto dalla sorgente al destinatario.
 Sono inclusi anche protocolli ausiliari come il protocollo **DHCP** (*Dynamic Host Configuration Protocol*) che consente di ottenere l'indirizzo IP da assegnare ad un host.
 ### **Livello di collegamento**
+All'interno di una *internetwork* ci sono diverse LAN e WAN interconnesse, con percorsi anche parzialmente sovrapposti.
+Il livello di collegamento ha il compito (tramite i router) di scegliere il percorso migliore per trasferire un pacchetto. Per ciascun percorso potrebbero poi essere usati protocolli differenti.
+Non esiste alcun protocollo specifico per questo livello, ma supporta tutti i protocolli standard e proprietari. I protocolli a questo livello possono comunque offrire servizi diversi, come la rilevazione e correzione degli errori, o altri.
+### **Livello fisico**
+Il livello fisico si occupa di trasferire i singoli bit attraverso il collegamento. La comunicazione tra due dispositivi e' ancora una comunicazione logica, perche' vi e' un livello nascosto, ovvero il mezzo trasmissivo al di sotto del livello fisico. Due dispositivi sono collegati tramite un mezzo trasmissivo, ma non trasporta bit, bensì segnali elettrici / ottici.
+Il livello fisico si occupa di **trasferire i singoli bit** di un flusso dati attraverso il mezzo trasmissivo, convertendoli in segnali elettrici, ottici o radio a seconda della tecnologia utilizzata (rame, fibra ottica, onde radio, ecc.).  
+Definisce quindi **le caratteristiche meccaniche, elettriche, funzionali e procedurali** necessarie per l’attivazione, il mantenimento e la disattivazione del collegamento fisico tra dispositivi.
