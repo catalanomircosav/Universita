@@ -26,3 +26,12 @@ Prima che i documenti possano essere indicizzati, e' necessaria una serie di pas
 5. **stemming and lemmatization**:
 	- **lemmatization**: Questa fase riduce le forme flessive/varianti alla forma base del dizionario (es. *am*, *are*, *is* $\to$ *be*).
 	- **stemming**: Riduce i termini alle loro **radici** tramite un troncamento di affissi (**NOTA BENE: dipende dalla lingua**). L'algoritmo più comune per l'inglese e' l'**algoritmo di Porter**.
+Infine, dopo la pre-elaborazione, si procede alla costruzione dell’**indice invertito** (_inverted index_).
+
+## **Modello Booleano**
+Il **modello booleano** e' il modello piu' semplice su cui costruire un **sistema IR**.
+In questo modello:
+- **rappresentazione**: un documento e' rappresentato come un **insieme di parole chiave**.
+- **query**: Le query sono **espressioni booleane** di parole chiave connesse tramite **connettivi logici** (**and**, **or**, **not**), supportando le parentesi.
+- **output**: il risultato del modello booleano ovviamente e' binario (documento **rilevante** o **non rilevante**). Non esistono *partial matches* ne' meccanismi di ranking.
+- **implementazione**: L'implementazione di un modello booleano si basa su **vettori di incidenza *termine-documento* (0 se la parole non e' presente, 1 se lo e')**. Le query vengono risolte tramite operazioni ***bitwise*** sui vettori.
