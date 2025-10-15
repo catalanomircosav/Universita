@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "11d4287befb9fcba",
@@ -184,10 +183,14 @@
   },
   "active": "bb5eecb395deb95b",
   "lastOpenFiles": [
-    "Pasted image 20251015141806.png",
+    "immagini/reti/protocollo tcp-ip.png.png",
+    "immagini/reti",
+    "Appunti/Reti di Calcolatori/⚙️ 2 - Architettura protocollare/Modello TCP-IP e ISO-OSI.md",
+    "immagini/protocollo tcp-ip.png",
+    "immagini/Senza nome.md",
+    "immagini",
     "Appunti/Reti di Calcolatori/🌐 1 - Fondamenti di Reti/Internet - una panoramica.md",
     "Appunti/Reti di Calcolatori/Glossario.md",
-    "Appunti/Reti di Calcolatori/⚙️ 2 - Architettura protocollare/Modello TCP-IP e ISO-OSI.md",
     "Appunti/Reti di Calcolatori/⚙️ 2 - Architettura protocollare",
     "TODO.canvas",
     "Appunti/Reti di Calcolatori/🌐 1 - Fondamenti di Reti",
@@ -199,8 +202,6 @@
     "Archivio",
     "Progetti",
     "Libri",
-    "Appunti",
-    "Appunti/Interazione Uomo Macchina",
     "Benvenuto.md"
   ]
 }
