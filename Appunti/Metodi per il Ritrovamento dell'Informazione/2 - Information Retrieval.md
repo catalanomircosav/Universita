@@ -21,4 +21,8 @@ Prima che i documenti possano essere indicizzati, e' necessaria una serie di pas
 1. **Strip unwanted characters/markup**: Rimozione di caratteri indesiderati, punteggiatura, numeri, ecc.
 2. **tokenization**: Il testo viene diviso in **token** (parole chiave), basandosi sugli spazi. Si creano qui due sfide: gestione dei termini ipotetici e dei numeri, che i **sistemi IR** meno recenti tendevano a non indicizzare. Inoltre, alcune lingue asiatiche non utilizzano spazi tra le parole, richiedendo algoritmi specifici.
 3. **normalization to terms**: l'obiettivo di questa fase e' di portare le parole indicizzate e i termini della query alla stessa forma standard.
-   Si definiscono in questa fase le **classi di equivalenza**.
+   Si definiscono in questa fase le **classi di equivalenza**. (*case folding*, gestione degli accenti, ecc.)
+4. **stopword removal**: Rimozione delle parole più comuni che hanno scarso contenuto semantico (circa il 30% delle *postings*). Questa fase sta pian piano scomparendo grazie al miglioramento di compressione e ottimizzazione delle query.
+5. **stemming and lemmatization**:
+	- **lemmatization**: Questa fase riduce le forme flessive/varianti alla forma base del dizionario (es. *am*, *are*, *is* $\to$ *be*).
+	- **stemming**: Riduce i termini alle loro **radici** tramite un troncamento di affissi (**NOTA BENE: dipende dalla lingua**). L'algoritmo più comune per l'inglese e' l'**algoritmo di Porter**.

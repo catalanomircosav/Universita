@@ -93,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "11d4287befb9fcba",
@@ -196,7 +197,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cd33f40c14a11b3b",
+  "active": "693d24df579b74ef",
   "lastOpenFiles": [
     "Senza nome.md",
     "Appunti/Metodi per il Ritrovamento dell'Informazione/2 - Information Retrieval.md",
