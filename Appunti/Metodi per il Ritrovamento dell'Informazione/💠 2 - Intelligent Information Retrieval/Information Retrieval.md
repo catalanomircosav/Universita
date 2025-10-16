@@ -46,3 +46,25 @@ Per superare i limiti del modello booleano, si e' passati a **modelli di *ranked
 Questo approccio permette di mostrare solo i primi $K$ risultati, risolvendo il problema ***feast or famine*** e non sopraffacendo l'utente. Il punteggio di somiglianza tiene conto di vari fattori (che il modello booleano invece ignora):
 - **term frequency**: la frequenza dei termini che si trovano sia nella query che nel documento;
 - **inverse document frequency**: la rarita' dei termini all'interno della query e del documento.
+
+## **Indice di Jaccard**
+Il **coefficiente di Jaccard** e' un modo molto semplice per quantificare quanto due insiemi si sovrappongono:
+$$\text{Jaccard(A,B)} = \frac{|A\cap B|}{|A \cup B|}$$
+in cui il:
+- **il numeratore** indica quante parole hanno in comune (*intersezione*);
+- **il denominatore** indica quante parole compaiono in totale nei due insiemi (*unione*).
+Il risultato e' sempre tra $0$ e $1$ in cui lo $0$ indica che non ci sono parole in comune, mentre $1$ indica una **perfetta sovrapposizione**.
+
+> ![example] Esempio
+> Query: {ides, of, march}
+> Doc 1: {caesar, died, in, march}
+> 
+> - Intersezione $\to$ {march} $\to$ 1
+> - Unione $\to$ {ides, of, march, caesar, died, in, march} $\to$ 6
+> 
+> $\text{Jaccard(A, B)} = \frac{1}{6} = 0.166\dots$
+
+Questo metodo tuttavia ha alcuni limiti:
+- **rappresenta solo un indice di similarità**, ovvero quanto un documento e' simile alla query cercata;
+- **non considera il *term frequency***: non considera quante volte compare una parola;
+- **non distingue parole rare da parole comuni**: tutte le parole hanno lo stesso parole (l'*idf* invece si).
