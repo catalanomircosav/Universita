@@ -8,6 +8,7 @@ Un modello di questo tipo specifica i dettagli della rappresentazione di un docu
 Un modello di Information Retrieval e' definito come una quadrupla
 
 $$[D,Q,F,R(q_i,d_j)]$$
+
 dove:
 - $D$ e' l'insieme delle viste logiche dei **documenti**,
 - $Q$ e' l'insieme delle viste logiche delle **query utente**
