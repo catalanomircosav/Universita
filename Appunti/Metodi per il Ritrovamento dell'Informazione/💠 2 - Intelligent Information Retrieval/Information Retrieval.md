@@ -102,6 +102,4 @@ Ma questo **non è realistico**: se una parola compare 100 volte, non significa 
 Il peso cresce, ma **molto meno rapidamente**: un termine che compare 1000 volte non vale 1000 volte di più, ma solo 4 volte di più.
 
 Il punteggio per una **coppia documento-query** e' calcolato come la somma, sui termini $t$ presenti sia nella query $q$ che nel documento $d$, dei pesi *log-frequency*:
-$$
-\text{score}(d, q) = \sum_{t \in q \cap d} \left( 1 + \log_{10}(\text{tf}_{t,d}) \right)
-$$
+$\text{score}(d, q) = \sum_{t \in q \cap d} \left( 1 + \log_{10}(\text{tf}_{t,d}) \right)$
