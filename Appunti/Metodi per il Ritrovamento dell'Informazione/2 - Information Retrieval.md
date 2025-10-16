@@ -26,7 +26,7 @@ Prima che i documenti possano essere indicizzati, e' necessaria una serie di pas
 5. **stemming and lemmatization**:
 	- **lemmatization**: Questa fase riduce le forme flessive/varianti alla forma base del dizionario (es. *am*, *are*, *is* $\to$ *be*).
 	- **stemming**: Riduce i termini alle loro **radici** tramite un troncamento di affissi (**NOTA BENE: dipende dalla lingua**). L'algoritmo più comune per l'inglese e' l'**algoritmo di Porter**.
-Infine, dopo la pre-elaborazione, si procede alla costruzione dell’**indice invertito** (_inverted index_).
+Infine, dopo la pre-elaborazione, si procede alla costruzione dell’**indice invertito** (_inverted index_), dove per ogni termine viene conservata una lista di *posting* (identificatori di documento) che contengono quel termine. 
 
 ## **Modello Booleano**
 Il **modello booleano** e' il modello piu' semplice su cui costruire un **sistema IR**.
@@ -35,3 +35,14 @@ In questo modello:
 - **query**: Le query sono **espressioni booleane** di parole chiave connesse tramite **connettivi logici** (**and**, **or**, **not**), supportando le parentesi.
 - **output**: il risultato del modello booleano ovviamente e' binario (documento **rilevante** o **non rilevante**). Non esistono *partial matches* ne' meccanismi di ranking.
 - **implementazione**: L'implementazione di un modello booleano si basa su **vettori di incidenza *termine-documento* (0 se la parole non e' presente, 1 se lo e')**. Le query vengono risolte tramite operazioni ***bitwise*** sui vettori.
+Il principale vantaggio di questo modello e' essere efficace per utenti esperti che possiedono una comprensione precisa delle loro necessita' informative.
+Tuttavia, il modello e' afflitto da problemi significativi che hanno spinto verso modelli di retrieval con sistema di ranking. Il modello booleano infatti presenta alcune criticita':
+1. **rigidità**: l'operatore *bitwise* `and` significa **tutto** (troppi pochi risultati), l'operatore `or` significa **alcuni** (troppi risultati).
+2. **problema *feast or famine***: si richiede molta abilita' per formulare una query che restituisca un numero gestibile di risultati: infatti le query booleane spesso producono o troppo pochi o troppi risultati.
+3. **mancanza di ranking**: il sistema non classifica l'output, poiche' tutti i documenti corrispondenti sono considerati ugualmente rilevanti.
+4. **relevance feedback**: integrare il ***relevance feedback*** (*modifica della query basata sulla valutazione di rilevanza fornita dall'utente*) e' molto complesso.
+## **Transizione verso modelli piu' complessi**
+Per superare i limiti del modello booleano, si e' passati a **modelli di *ranked retrieval***. In questi modelli (come il *Vector Space Model*), l'obiettivo e' di ordinare i documenti in base a un punteggio di somiglianza con la query (spesso query in linguaggio naturale) invece di espressioni booleane.
+Questo approccio permette di mostrare solo i primi $K$ risultati, risolvendo il problema ***feast or famine*** e non sopraffacendo l'utente. Il punteggio di somiglianza tiene conto di vari fattori (che il modello booleano invece ignora):
+- **term frequency**: la frequenza dei termini che si trovano sia nella query che nel documento
+- **inverse document frequency**: la rarita' dei termini all'interno della query e del documento.
