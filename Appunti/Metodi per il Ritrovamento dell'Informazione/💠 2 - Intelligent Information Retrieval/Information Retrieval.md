@@ -166,4 +166,4 @@ dove:
 - $q_i$ e' il peso $tf-idf$ del termine i nella query;
 - $d_i$ e' il peso $tf-df$ del termine i nel documento.
 
-Per i vettori $q$ e $d$ che sono gia' normalizzati in lunghezza, la **similarita' coseno** e' semplicemente il loro ***prodotto scalare***.P
+Per i vettori $q$ e $d$ che sono gia' normalizzati in lunghezza, la **similarita' coseno** e' semplicemente il loro ***prodotto scalare***.
