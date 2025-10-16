@@ -110,8 +110,14 @@ Il punteggio e' 0 se nessuno dei termini della query e' presente nel documento.
 
 ## **L'importanza della rarita'**
 I termini rari in un'intera collezione sono considerati piu' informativi dei termini molto frequenti (es. *stop words*). Per quantificare questa rarita', si usa la ***document frequency***, definita come il numero dei documenti nella collezione che contengono il termine $t$. $df$ e' una misura inversa dell'informativita' di $t$
-L'***inverse document frequency*** (*idf*) di $t$ e' definita come segue: $\text{idf}_t = \log_{10}\left(\frac{N}{\text{df}_t}\right)$, dove:
+L'***inverse document frequency*** (*idf*) di $t$ e' definita come segue: 
+
+$\text{idf}_t = \log_{10}\left(\frac{N}{\text{df}_t}\right)$
+
+dove:
 - $N$ e' il numero totale di documenti.
+
+
 Il logaritmo viene usato per smorzare l'effetto dell'*idf*. L'*idf* e' una funzione che dipende solo da $t$ e non dal documento.
 
 > Nota:
