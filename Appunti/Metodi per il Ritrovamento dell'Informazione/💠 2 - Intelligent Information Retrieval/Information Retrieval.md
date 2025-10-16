@@ -127,7 +127,7 @@ Il logaritmo viene usato per smorzare l'effetto dell'*idf*. L'*idf* e' una funzi
 > **Nota**:
 > È importante notare che l'idf **non ha effetto sul ranking** per le query composte da un solo termine. **Tuttavia, per query con due o più termini, la pesatura $idf$ fa sì che le occorrenze del termine più raro contino molto di più nel ranking finale rispetto a quelle del termine più frequente**.
 
-# **Lo Schema di Pesatura $tf-idf$**
+## **Lo Schema di Pesatura $tf-idf$**
 Il peso $tf-idf$ di un termine e' il prodotto del suo peso $tf$ (*spesso logaritmico*) e del suo peso $idf$: 
 
 $$w_{i,d} = (1+\log_{10} tf_{t,d} \times idf_t)$$
@@ -139,3 +139,29 @@ Questo è lo schema di pesatura più noto in IR. Il peso tf-idf ha due propriet�
 Il punteggio finale per una coppia $(d,q)$ e' dato dalla somma dei pesi $tf - idf$ per tutti i termini $t$ che si trovano sia nella query che nel documento:
 
 $$score(d,q) = \sum_{t\in q\cap d}tf_{t,d} \times idf_t$$
+
+
+## **Il Modello Spazio Vettoriale (VSM) e la Similarità Cosine**
+Il **modello spazio vettoriale*** rappresenta sia la query che i documenti come vettori pesati $tf-idf$. I termini fungono da assi in uno spazio vettoriale di dimensione $|V|$, mentre i documenti sono i punti o i vettori in questo spazio.
+L'idea chiave e' quella di rankare i documenti in base alla loro prossimita' al vettore della query in questo spazio.
+
+La distanza euclidea si rivela una **pessima misura di prossimita'**, in quanto e' troppo influenzata dalla lunghezza dei vettori (ovvero dalla *lunghezza dei documenti*). Un documento e la sua copia appesa a se stesso avrebbero una grande distanza euclidea pur avendo lo stesso contenuto semantico.
+
+Per superare questo problema, si e' deciso di utilizzare l'angolo tra i vettori come misura di similarita'.
+
+## **Normalizzazione e Coseno di Similitudine**
+Prima di misurare l'angolo, si procede alla normalizzazione della lunghezza: il vettore viene normalizzato **dividendo ciascuna delle sue componenit per la sua norma L2**. Questo produce un vettore unitario. L'effetto risultante e' che i documenti lunghi e corti ora hanno pesi comparabili, e i documenti **semanticamente** ***equivalenti*** avranno vettori identici dopo la normalizzazione.
+
+**Norma L2:** 
+$$||\vec{x}||_2 = \sqrt{\sum_i x_i^2}$$
+
+Rankare i documenti in modo decrescente dell'angolo e' equivalente a rankarli in ordine crescente del **coseno dell'angolo** (il coseno e' **monotonicamente decrescente nell'intervallo 0 - 180 gradi**).
+Per i vettori $q$ e $d$ che sono gia' normalizzati in lunghezza, la **similarita' coseno** e' semplicemente il loro ***prodotto scalare***:
+
+$$
+cos(\vec{q},\vec{d}) = \frac{\vec{q}\cdot\vec{d}}{|\vec{q}||\vec{d}|} = \frac{\vec{q}}{|\vec{q}|}\cdot\frac{\vec{d}}{|\vec{d}|} = \frac{\sum_{i+1}^{|V|}q_i\cdot d_i^2}{\sqrt{\sum_{i=1}^{|V|}q_i^2} \cdot \sqrt{\sum_{i=1}^{|V|}d_i^2}}
+$$
+
+dove:
+- $q_i$ e' il peso $tf-idf$ del termine i nella query;
+- $d_i$ e' il peso $tf-df$ del termine i nel documento.
