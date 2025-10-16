@@ -52,7 +52,7 @@ Questo approccio permette di mostrare solo i primi $K$ risultati, risolvendo il 
 - **term frequency**: la frequenza dei termini che si trovano sia nella query che nel documento;
 - **inverse document frequency**: la rarita' dei termini all'interno della query e del documento.
 
-## **Indice di Jaccard**
+## **Modello di Jaccard**
 Il **coefficiente di Jaccard** e' un modo molto semplice per quantificare quanto due insiemi si sovrappongono:
 $$\text{Jaccard(A,B)} = \frac{|A\cap B|}{|A \cup B|}$$
 in cui il:
@@ -75,4 +75,33 @@ Questo metodo tuttavia ha alcuni limiti:
 - **rappresenta solo un indice di similarità**, ovvero quanto un documento e' simile alla query cercata;
 - **non considera il *term frequency***: non considera quante volte compare una parola;
 - **non distingue parole rare da parole comuni**: tutte le parole hanno lo stesso peso (l'*idf* invece si).
+## **Modello *Bag of Words***
+Il modello **Bag of Words** stabilisce che la rappresentazione vettoriale di un documento non tiene conto dell'ordine delle parole al suo interno.
+La *term frequency* $\text{tf}_{\text{t,d}}$ e' definita come il numero di volte in cui il termine $t$ ricorre nel documento $d$. 
+Un grosso limite di questo modello e' che la **frequenza grezza del termine non basta**: Un documento con 10 occorrenze di un termine e' piu' rilevante di uno con 1 occorrenza, ma non e' 10 volte piu' rilevante. Pertanto ***la rilevanza non aumenta in modo proporzionale con la frequenza del termine***.
+Per ovviare a cio' si utilizza la **ponderazione logaritmica della frequenza**:
+$$
+w_{t,d} = 
+\begin{cases}
+1 + \log_{10}(\text{tf}_{t,d}) & \text{se } \text{tf}_{t,d} > 0 \\
+0 & \text{altrimenti}
+\end{cases}
+$$
+Questa formula definisce la **scalatura sublineare di $\text{tf}$**, ovvero una tecnica matematica usata per ridurre l'impatto (il peso) dei termini molto frequenti in un documento, senza annullarli del tutto: questo significa che la crescita del peso di un termine non e' proporzionale (lineare), ma molto piu' lenta.
 
+> Esempio:
+> 
+> Nel modello _Bag of Words_, se un termine appare:
+> - 1 volta → $\text{tf} = 1$
+> - 10 volte → $\text{tf} = 10$
+> - 100 volte → $\text{tf} = 100$
+>
+Un modello **lineare** considererebbe il termine 100 volte più importante nel terzo caso.  
+Ma questo **non è realistico**: se una parola compare 100 volte, non significa che il documento sia 100 volte più rilevante — spesso si tratta solo di una parola comune nel testo.
+
+Il peso cresce, ma **molto meno rapidamente**: un termine che compare 1000 volte non vale 1000 volte di più, ma solo 4 volte di più.
+
+Il punteggio per una **coppia documento-query** e' calcolato come la somma, sui termini $t$ presenti sia nella query $q$ che nel documento $d$, dei pesi *log-frequency*:
+$$
+\text{score}(d, q) = \sum_{t \in q \cap d} \left( 1 + \log_{10}(\text{tf}_{t,d}) \right)
+$$
