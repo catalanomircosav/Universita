@@ -107,3 +107,23 @@ Il punteggio per una **coppia documento-query** e' calcolato come la somma, sui 
 
 $$\text{score}(d, q) = \sum_{t \in q \cap d} \left( 1 + \log_{10}(\text{tf}_{t,d}) \right)$$
 Il punteggio e' 0 se nessuno dei termini della query e' presente nel documento.
+
+## **L'importanza della rarita'**
+I termini rari in un'intera collezione sono considerati piu' informativi dei termini molto frequenti (es. *stop words*). Per quantificare questa rarita', si usa la ***document frequency***, definita come il numero dei documenti nella collezione che contengono il termine $t$. $df$ e' una misura inversa dell'informativita' di $t$
+L'***inverse document frequency*** (*idf*) di $t$ e' definita come segue: $\text{idf}_t = \log_{10}\left(\frac{N}{\text{df}_t}\right)$, dove:
+- $N$ e' il numero totale di documenti.
+Il logaritmo viene usato per smorzare l'effetto dell'*idf*. L'*idf* e' una funzione che dipende solo da $t$ e non dal documento.
+
+> Nota:
+> È importante notare che l'idf **non ha effetto sul ranking** per le query composte da un solo termine. **Tuttavia, per query con due o più termini, la pesatura $idf$ fa sì che le occorrenze del termine più raro contino molto di più nel ranking finale rispetto a quelle del termine più frequente**.
+
+# **Lo Schema di Pesatura $tf-idf$**
+Il peso $tf-idf$ di un termine e' il prodotto del suo peso $tf$ (*spesso logaritmico*) e del suo peso $idf$: $w_{i,d} = (1+\log_{10} tf_{t,d} \times idf_t)$
+Questo è lo schema di pesatura più noto in IR. Il peso tf-idf ha due proprietà desiderate:
+- **aumenta con il numero di occorrenza del termine all'interno del documento**;
+- **aumenta con la rarita' del termine nella collezione**.
+
+Il punteggio finale per una coppia $(d,q)$ e' dato dalla somma dei pesi $tf - idf$ per tutti i termini $t$ che si trovano sia nella query che nel documento:
+$$
+score(d,q) = \sum_{t\in q\cap d}tf_{t,d} \times idf_t
+$$
