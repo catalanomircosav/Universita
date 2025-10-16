@@ -124,6 +124,4 @@ Questo è lo schema di pesatura più noto in IR. Il peso tf-idf ha due propriet�
 - **aumenta con la rarita' del termine nella collezione**.
 
 Il punteggio finale per una coppia $(d,q)$ e' dato dalla somma dei pesi $tf - idf$ per tutti i termini $t$ che si trovano sia nella query che nel documento:
-$$
-score(d,q) = \sum_{t\in q\cap d}tf_{t,d} \times idf_t
-$$
+$$score(d,q) = \sum_{t\in q\cap d}tf_{t,d} \times idf_t$$
