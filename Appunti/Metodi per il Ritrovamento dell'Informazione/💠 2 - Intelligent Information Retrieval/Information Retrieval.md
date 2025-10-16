@@ -2,7 +2,7 @@
 ___
 # **Modello di retrieval**
 L'**information retrieval** intelligente si basa sulla definizione di un **modello di retrieval**. 
-Un modello di questo tipo specifica i dettagli della rappresentazione di un documento, della rappresentazione della query e della funzione di retrieval. Determina anche la **rilevanza**, che può essere *binaria* oppure *continua*. <u><b>La funzione di ranking assegna punteggi ai documenti a una data query</b></u>
+Un modello di questo tipo specifica i dettagli della rappresentazione di un documento, della rappresentazione della query e della funzione di retrieval. Determina anche la **rilevanza**, che può essere *binaria* oppure *continua*, ovvero puo' essere rilevante/non rilevante o avere solo un **punteggio di similarita'**. <u><b>La funzione di ranking assegna punteggi ai documenti a una data query</b></u>
 
 Un modello di Information Retrieval e' definito come una quadrupla:
 $$[D,Q,F,R(q_i,d_j)]$$
@@ -37,7 +37,8 @@ In questo modello:
 - **implementazione**: L'implementazione di un modello booleano si basa su **vettori di incidenza *termine-documento* (0 se la parole non e' presente, 1 se lo e')**. Le query vengono risolte tramite operazioni ***bitwise*** sui vettori.
 
 Il principale vantaggio di questo modello e' essere efficace per utenti esperti che possiedono una comprensione precisa delle loro necessita' informative.
-Tuttavia, il modello e' afflitto da problemi significativi che hanno spinto verso modelli di retrieval con sistema di ranking. Il modello booleano infatti presenta alcune criticita':
+Tuttavia, il modello e' afflitto da problemi significativi che hanno spinto verso modelli di retrieval con sistema di ranking. 
+**Il modello booleano infatti presenta alcune criticita':**
 1. **rigidità**: l'operatore *bitwise* `and` significa **tutto** (troppi pochi risultati), l'operatore `or` significa **alcuni** (troppi risultati).
 2. **problema *feast or famine***: si richiede molta abilita' per formulare una query che restituisca un numero gestibile di risultati: infatti le query booleane spesso producono o troppo pochi o troppi risultati.
 3. **mancanza di ranking**: il sistema non classifica l'output, poiche' tutti i documenti corrispondenti sono considerati ugualmente rilevanti.
