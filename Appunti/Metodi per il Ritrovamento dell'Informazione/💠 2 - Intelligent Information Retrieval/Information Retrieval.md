@@ -89,6 +89,7 @@ w_{t,d} =
 \end{cases}
 ```
 
+
 Questa formula definisce la **scalatura sublineare di $\text{tf}$**, ovvero una tecnica matematica usata per ridurre l'impatto (il peso) dei termini molto frequenti in un documento, senza annullarli del tutto: questo significa che la crescita del peso di un termine non e' proporzionale (lineare), ma molto piu' lenta.
 
 > Esempio:
