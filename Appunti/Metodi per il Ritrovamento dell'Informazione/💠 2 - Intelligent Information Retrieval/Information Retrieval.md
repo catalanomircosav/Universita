@@ -1,6 +1,6 @@
 #mri 
 ___
-# **Modello di retrieval**
+# **Modello di Retrieval**
 L'**information retrieval** intelligente si basa sulla definizione di un **modello di retrieval**. 
 Un modello di questo tipo specifica i dettagli della rappresentazione di un documento, della rappresentazione della query e della funzione di retrieval. Determina anche la **rilevanza**, che può essere *binaria* oppure *continua*, ovvero puo' essere **rilevante/non rilevante** o avere solo un **punteggio di similarità**.
 <u><b>La funzione di ranking assegna punteggi ai documenti a una data query</b></u>.
