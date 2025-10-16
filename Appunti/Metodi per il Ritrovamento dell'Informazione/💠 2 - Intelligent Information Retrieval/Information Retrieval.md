@@ -95,7 +95,7 @@ Questa formula definisce la **scalatura sublineare di $\text{tf}$**, ovvero una 
 Un modello **lineare** considererebbe il termine 100 volte più importante nel terzo caso.  
 Ma questo **non è realistico**: se una parola compare 100 volte, non significa che il documento sia 100 volte più rilevante — spesso si tratta solo di una parola comune nel testo.
 
-![](https://latex.codecogs.com/svg.image?$w_{t,d}=\begin{cases}1&plus;\log_{10}\(\text{tf}_{t,d}\)&\text{se}\text{tf}_{t,d}>0\\0&\text{altrimenti}\end{cases}$)
+![formula ponderazionelogaritmica](https://latex.codecogs.com/svg.image?$w_{t,d}=\begin{cases}1&plus;\log_{10}\(\text{tf}_{t,d}\)&\text{se}\text{tf}_{t,d}>0\\0&\text{altrimenti}\end{cases}$)
 
 Il peso cresce, ma **molto meno rapidamente**: un termine che compare 1000 volte non vale 1000 volte di più, ma solo 4 volte di più.
 
