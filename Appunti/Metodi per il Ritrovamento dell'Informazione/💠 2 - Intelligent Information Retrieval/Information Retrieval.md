@@ -118,7 +118,8 @@ Il logaritmo viene usato per smorzare l'effetto dell'*idf*. L'*idf* e' una funzi
 > È importante notare che l'idf **non ha effetto sul ranking** per le query composte da un solo termine. **Tuttavia, per query con due o più termini, la pesatura $idf$ fa sì che le occorrenze del termine più raro contino molto di più nel ranking finale rispetto a quelle del termine più frequente**.
 
 # **Lo Schema di Pesatura $tf-idf$**
-Il peso $tf-idf$ di un termine e' il prodotto del suo peso $tf$ (*spesso logaritmico*) e del suo peso $idf$: $w_{i,d} = (1+\log_{10} tf_{t,d} \times idf_t)$
+Il peso $tf-idf$ di un termine e' il prodotto del suo peso $tf$ (*spesso logaritmico*) e del suo peso $idf$: 
+$$w_{i,d} = (1+\log_{10} tf_{t,d} \times idf_t)$$
 Questo è lo schema di pesatura più noto in IR. Il peso tf-idf ha due proprietà desiderate:
 - **aumenta con il numero di occorrenza del termine all'interno del documento**;
 - **aumenta con la rarita' del termine nella collezione**.
