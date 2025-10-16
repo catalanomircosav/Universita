@@ -152,7 +152,8 @@ Per superare questo problema, si e' deciso di utilizzare l'angolo tra i vettori 
 ## **Normalizzazione e Coseno di Similitudine**
 Prima di misurare l'angolo, si procede alla normalizzazione della lunghezza: il vettore viene normalizzato **dividendo ciascuna delle sue componenit per la sua norma L2**. Questo produce un vettore unitario. L'effetto risultante e' che i documenti lunghi e corti ora hanno pesi comparabili, e i documenti **semanticamente** ***equivalenti*** avranno vettori identici dopo la normalizzazione.
 
-**Norma L2:** 
+**Norma L2:**
+
 $$||\vec{x}||_2 = \sqrt{\sum_i x_i^2}$$
 
 Rankare i documenti in modo decrescente dell'angolo e' equivalente a rankarli in ordine crescente del **coseno dell'angolo** (il coseno e' **monotonicamente decrescente nell'intervallo 0 - 180 gradi**).
