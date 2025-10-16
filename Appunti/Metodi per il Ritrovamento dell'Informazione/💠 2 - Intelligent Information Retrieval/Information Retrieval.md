@@ -6,6 +6,7 @@ Un modello di questo tipo specifica i dettagli della rappresentazione di un docu
 <u><b>La funzione di ranking assegna punteggi ai documenti a una data query</b></u>.
 
 Un modello di Information Retrieval e' definito come una quadrupla
+
 $$[D,Q,F,R(q_i,d_j)]$$
 dove:
 - $D$ e' l'insieme delle viste logiche dei **documenti**,
