@@ -15,6 +15,7 @@ dove:
 - $F$ e' il **framework utilizzato per modellare i documenti e le query**,
 - $R(q_i, d_j)$ e' la **funzione di ranking**.
 
+
 I modelli di retrieval possono essere classificati in:
 - <u>modelli booleani</u>: *theroetic set*, *extended boolean*,
 - <u>modelli vector space</u>: *statistical/algebric*,
