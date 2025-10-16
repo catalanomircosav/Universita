@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti/Metodi per il Ritrovamento dell'Informazione/💠 2 - Intelligent Information Retrieval/Information Retrieval.md",
+                "file": "Appunti/Metodi per il Ritrovamento dell'Informazione/Proprieta' dei Logaritmi.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Information Retrieval"
+              "title": "Proprieta' dei Logaritmi"
             }
           }
         ],
@@ -93,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "11d4287befb9fcba",
@@ -199,9 +198,11 @@
   },
   "active": "693d24df579b74ef",
   "lastOpenFiles": [
+    "Appunti/Metodi per il Ritrovamento dell'Informazione/💠 2 - Intelligent Information Retrieval/Information Retrieval.md",
+    "Appunti/Metodi per il Ritrovamento dell'Informazione/Proprieta' dei Logaritmi.md",
+    "Appunti/Metodi per il Ritrovamento dell'Informazione/Senza nome",
     "Appunti/Metodi per il Ritrovamento dell'Informazione/💠 2 - Intelligent Information Retrieval",
     "n.md",
-    "Appunti/Metodi per il Ritrovamento dell'Informazione/💠 2 - Intelligent Information Retrieval/Information Retrieval.md",
     "Appunti/Metodi per il Ritrovamento dell'Informazione/⚪ 1 - Introduzione/1 - Introduzione.md",
     "Appunti/Metodi per il Ritrovamento dell'Informazione/⚪ 1 - Introduzione",
     "re.md",
@@ -220,8 +221,6 @@
     "Senza nome.canvas",
     "Appunti/Fondamenti di Fisica",
     "Appunti/Reti di Calcolatori",
-    "Archivio",
-    "Progetti",
     "Benvenuto.md"
   ]
 }
