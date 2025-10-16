@@ -58,6 +58,7 @@ Il risultato e' sempre tra $0$ e $1$ in cui lo $0$ indica che non ci sono parole
 > Esempio:
 > 
 > Query: {ides, of, march}
+> 
 > Doc 1: {caesar, died, in, march}
 > 
 > - Intersezione $\to$ {march} $\to$ 1
