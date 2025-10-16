@@ -44,5 +44,5 @@ Tuttavia, il modello e' afflitto da problemi significativi che hanno spinto vers
 ## **Transizione verso modelli piu' complessi**
 Per superare i limiti del modello booleano, si e' passati a **modelli di *ranked retrieval***. In questi modelli (come il *Vector Space Model*), l'obiettivo e' di ordinare i documenti in base a un punteggio di somiglianza con la query (spesso query in linguaggio naturale) invece di espressioni booleane.
 Questo approccio permette di mostrare solo i primi $K$ risultati, risolvendo il problema ***feast or famine*** e non sopraffacendo l'utente. Il punteggio di somiglianza tiene conto di vari fattori (che il modello booleano invece ignora):
-- **term frequency**: la frequenza dei termini che si trovano sia nella query che nel documento
+- **term frequency**: la frequenza dei termini che si trovano sia nella query che nel documento;
 - **inverse document frequency**: la rarita' dei termini all'interno della query e del documento.
