@@ -35,6 +35,7 @@ In questo modello:
 - **query**: Le query sono **espressioni booleane** di parole chiave connesse tramite **connettivi logici** (**and**, **or**, **not**), supportando le parentesi.
 - **output**: il risultato del modello booleano ovviamente e' binario (documento **rilevante** o **non rilevante**). Non esistono *partial matches* ne' meccanismi di ranking.
 - **implementazione**: L'implementazione di un modello booleano si basa su **vettori di incidenza *termine-documento* (0 se la parole non e' presente, 1 se lo e')**. Le query vengono risolte tramite operazioni ***bitwise*** sui vettori.
+
 Il principale vantaggio di questo modello e' essere efficace per utenti esperti che possiedono una comprensione precisa delle loro necessita' informative.
 Tuttavia, il modello e' afflitto da problemi significativi che hanno spinto verso modelli di retrieval con sistema di ranking. Il modello booleano infatti presenta alcune criticita':
 1. **rigidità**: l'operatore *bitwise* `and` significa **tutto** (troppi pochi risultati), l'operatore `or` significa **alcuni** (troppi risultati).
