@@ -55,7 +55,8 @@ in cui il:
 - **il denominatore** indica quante parole compaiono in totale nei due insiemi (*unione*).
 Il risultato e' sempre tra $0$ e $1$ in cui lo $0$ indica che non ci sono parole in comune, mentre $1$ indica una **perfetta sovrapposizione**.
 
-> Esempio
+> Esempio:
+> 
 > Query: {ides, of, march}
 > Doc 1: {caesar, died, in, march}
 > 
