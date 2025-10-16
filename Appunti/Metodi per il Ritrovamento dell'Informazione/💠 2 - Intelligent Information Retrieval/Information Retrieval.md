@@ -156,8 +156,7 @@ Prima di misurare l'angolo, si procede alla normalizzazione della lunghezza: il 
 
 $$||\vec{x}||_2 = \sqrt{\sum_i x_i^2}$$
 
-Rankare i documenti in modo decrescente dell'angolo e' equivalente a rankarli in ordine crescente del **coseno dell'angolo** (il coseno e' **monotonicamente decrescente nell'intervallo 0 - 180 gradi**).
-Per i vettori $q$ e $d$ che sono gia' normalizzati in lunghezza, la **similarita' coseno** e' semplicemente il loro ***prodotto scalare***:
+Rankare i documenti in modo decrescente dell'angolo e' equivalente a rankarli in ordine crescente del **coseno dell'angolo** (il coseno e' **monotonicamente decrescente nell'intervallo 0 - 180 gradi**)
 
 $$
 cos(\vec{q},\vec{d}) = \frac{\vec{q}\cdot\vec{d}}{|\vec{q}||\vec{d}|} = \frac{\vec{q}}{|\vec{q}|}\cdot\frac{\vec{d}}{|\vec{d}|} = \frac{\sum_{i+1}^{|V|}q_i\cdot d_i^2}{\sqrt{\sum_{i=1}^{|V|}q_i^2} \cdot \sqrt{\sum_{i=1}^{|V|}d_i^2}}
@@ -166,3 +165,5 @@ $$
 dove:
 - $q_i$ e' il peso $tf-idf$ del termine i nella query;
 - $d_i$ e' il peso $tf-df$ del termine i nel documento.
+
+Per i vettori $q$ e $d$ che sono gia' normalizzati in lunghezza, la **similarita' coseno** e' semplicemente il loro ***prodotto scalare***.P
