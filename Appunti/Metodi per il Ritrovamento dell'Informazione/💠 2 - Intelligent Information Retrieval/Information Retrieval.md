@@ -75,3 +75,4 @@ Questo metodo tuttavia ha alcuni limiti:
 - **rappresenta solo un indice di similarità**, ovvero quanto un documento e' simile alla query cercata;
 - **non considera il *term frequency***: non considera quante volte compare una parola;
 - **non distingue parole rare da parole comuni**: tutte le parole hanno lo stesso peso (l'*idf* invece si).
+
