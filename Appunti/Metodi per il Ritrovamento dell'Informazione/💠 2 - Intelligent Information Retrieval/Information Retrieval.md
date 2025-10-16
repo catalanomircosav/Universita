@@ -44,6 +44,8 @@ Tuttavia, il modello e' afflitto da problemi significativi che hanno spinto vers
 2. **problema *feast or famine***: si richiede molta abilita' per formulare una query che restituisca un numero gestibile di risultati: infatti le query booleane spesso producono o troppo pochi o troppi risultati.
 3. **mancanza di ranking**: il sistema non classifica l'output, poiche' tutti i documenti corrispondenti sono considerati ugualmente rilevanti.
 4. **relevance feedback**: integrare il ***relevance feedback*** (*modifica della query basata sulla valutazione di rilevanza fornita dall'utente*) e' molto complesso.
+
+Il modello booleano adotta una logica di tipo _set-theoretic_: o un documento appartiene all’insieme dei risultati, oppure no.
 ## **Transizione verso modelli piu' complessi**
 Per superare i limiti del modello booleano, si e' passati a **modelli di *ranked retrieval***. In questi modelli (come il *Vector Space Model*), l'obiettivo e' di ordinare i documenti in base a un punteggio di somiglianza con la query (spesso query in linguaggio naturale) invece di espressioni booleane.
 Questo approccio permette di mostrare solo i primi $K$ risultati, risolvendo il problema ***feast or famine*** e non sopraffacendo l'utente. Il punteggio di somiglianza tiene conto di vari fattori (che il modello booleano invece ignora):
@@ -72,4 +74,4 @@ Il risultato e' sempre tra $0$ e $1$ in cui lo $0$ indica che non ci sono parole
 Questo metodo tuttavia ha alcuni limiti:
 - **rappresenta solo un indice di similarità**, ovvero quanto un documento e' simile alla query cercata;
 - **non considera il *term frequency***: non considera quante volte compare una parola;
-- **non distingue parole rare da parole comuni**: tutte le parole hanno lo stesso parole (l'*idf* invece si).
+- **non distingue parole rare da parole comuni**: tutte le parole hanno lo stesso peso (l'*idf* invece si).
