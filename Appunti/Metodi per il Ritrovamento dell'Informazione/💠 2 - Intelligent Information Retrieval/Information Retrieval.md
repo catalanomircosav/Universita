@@ -62,7 +62,7 @@ in cui il:
 - **il denominatore** indica quante parole compaiono in totale nei due insiemi (*unione*).
 Il risultato e' sempre tra $0$ e $1$ in cui lo $0$ indica che non ci sono parole in comune, mentre $1$ indica una **perfetta sovrapposizione**.
 
-> Esempio:
+> **Esempio**:
 > 
 > Query: {ides, of, march}
 > 
@@ -93,7 +93,7 @@ $$
 
 Questa formula definisce la **scalatura sublineare di $\text{tf}$**, ovvero una tecnica matematica usata per ridurre l'impatto (il peso) dei termini molto frequenti in un documento, senza annullarli del tutto: questo significa che la crescita del peso di un termine non e' proporzionale (lineare), ma molto piu' lenta.
 
-> Esempio:
+> **Esempio**:
 > 
 > Nel modello _Bag of Words_, se un termine appare:
 > - 1 volta → $\text{tf} = 1$
@@ -123,7 +123,7 @@ dove:
 
 Il logaritmo viene usato per smorzare l'effetto dell'*idf*. L'*idf* e' una funzione che dipende solo da $t$ e non dal documento.
 
-> Nota:
+> **Nota**:
 > È importante notare che l'idf **non ha effetto sul ranking** per le query composte da un solo termine. **Tuttavia, per query con due o più termini, la pesatura $idf$ fa sì che le occorrenze del termine più raro contino molto di più nel ranking finale rispetto a quelle del termine più frequente**.
 
 # **Lo Schema di Pesatura $tf-idf$**
