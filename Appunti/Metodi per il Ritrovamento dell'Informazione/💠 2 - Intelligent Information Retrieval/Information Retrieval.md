@@ -149,7 +149,7 @@ La distanza euclidea si rivela una **pessima misura di prossimità**, in quanto 
 
 Per superare questo problema, si e' deciso di utilizzare l'angolo tra i vettori come misura di similarita'.
 ## **Normalizzazione e Coseno di Similitudine**
-Prima di misurare l'angolo, si procede alla normalizzazione della lunghezza: il vettore viene normalizzato **dividendo ciascuna delle sue componenti per la sua norma L2**. Questo produce un vettore unitario. L'effetto risultante e' che i documenti lunghi e corti ora hanno pesi comparabili, e i documenti **semanticamente** ***equivalenti*** avranno vettori identici dopo la normalizzazione.
+Prima di misurare l'angolo, si procede alla normalizzazione della lunghezza: il vettore viene normalizzato **dividendo ciascuna delle sue componenti per la sua norma L2**. Questo produce u\n vettore unitario. L'effetto risultante e' che i documenti lunghi e corti ora hanno pesi comparabili, e i documenti **semanticamente** ***equivalenti*** avranno vettori identici dopo la normalizzazione.
 
 **Norma L2:**
 
@@ -163,6 +163,6 @@ $$
 
 dove:
 - $q_i$ e' il peso $tf-idf$ del termine i nella query;
-- $d_i$ e' il peso $tf-df$ del termine i nel documento.
+- $d_i$ e' il peso $tf-idf$ del termine i nel documento.
 
 Per i vettori $q$ e $d$ che sono gia' normalizzati in lunghezza, la **similarita' coseno** e' semplicemente il loro ***prodotto scalare***.
