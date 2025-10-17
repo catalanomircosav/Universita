@@ -67,3 +67,12 @@ Qualsiasi comunicazione che coinvolge due parti richiede due indirizzi: **indiri
 - Il livello **fisico** non necessita di indirizzi.
 
 ![indirizzamento-tcp-ip](indirizzamento-tcp-ip.png)
+## **Multiplexing e Demultiplexing**
+Nel modello **TCP/IP**, i processi di **multiplexing** e **demultiplexing** vengono svolti principalmente dal **livello di trasporto** (ad esempio da TCP o UDP) e servono a gestire la comunicazione tra più applicazioni che condividono la stessa connessione di rete.
+
+Il **multiplexing** e' il processo con cui il livello di trasporto riceve dati da piu' applicazioni diverse e li combina in un unico flusso di dati da inviare al livello di rete.
+Ogni flusso di dati e' identificato da un numero di porta sorgente, che consente al destinatario di sapere da quale applicazione proviene. (*Tutto questo perche' lo stack protocollare permette piu' protocolli*)
+Il **demultiplexing** e' il processo inverso: quando i segmenti arrivano al dispositivo di destinazione, il livello di trasporto analizza le informazioni contenute nell'intestazione per consegnare ciascun segmento all'applicazione corretta.
+
+Il multiplexing e demultiplexing si basano sull’uso congiunto di **indirizzi IP** (*che identificano l'host*) e **numeri di porta** (*che identificano l'applicazione*).
+``(IP sorgente, porta sorgente) ↔ (IP destinazione, porta destinazione)``
