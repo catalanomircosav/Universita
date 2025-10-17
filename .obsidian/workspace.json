@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "11d4287befb9fcba",
@@ -181,7 +182,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cd33f40c14a11b3b",
+  "active": "361d29a786893211",
   "lastOpenFiles": [
     "Appunti/Reti di Calcolatori/⚙️ 2 - Architettura protocollare/indirizzamento-tcp-ip.png",
     "Senza nome.md",

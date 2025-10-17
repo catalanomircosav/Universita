@@ -66,4 +66,4 @@ Qualsiasi comunicazione che coinvolge due parti richiede due indirizzi: **indiri
 - A livello di **collegamento** gli indirizzi sono chiamati **MAC** e sono indirizzi definiti localmente, stampati sulla scheda di rete dal produttore e identificano univocamente una determinata interfaccia di rete.
 - Il livello **fisico** non necessita di indirizzi.
 
-![[indirizzamento-tcp-ip.png]]
+![indirizzamento-tcp-ip](indirizzamento-tcp-ip.png)
