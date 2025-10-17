@@ -32,6 +32,7 @@ Prima che i documenti possano essere indicizzati, e' necessaria una serie di pas
 	- **stemming**: Riduce i termini alle loro **radici** tramite un troncamento di affissi (**NOTA BENE: dipende dalla lingua**). L'algoritmo più comune per l'inglese e' l'**algoritmo di Porter**.
 Infine, dopo la pre-elaborazione, si procede alla costruzione dell’**indice invertito** (_inverted index_), dove per ogni termine viene conservata una lista di *posting* (identificatori di documento) che contengono quel termine. 
 
+**VOCABOLARIO**: L'insieme dei termini distinti che rimangono dopo il pre-processing. 
 ## **Modello Booleano**
 Il **modello booleano** e' il modello piu' semplice su cui costruire un **sistema IR**.
 In questo modello:
@@ -140,17 +141,15 @@ Il punteggio finale per una coppia $(d,q)$ e' dato dalla somma dei pesi $tf - id
 
 $$score(d,q) = \sum_{t\in q\cap d}tf_{t,d} \times idf_t$$
 
-
 ## **Il Modello Spazio Vettoriale (VSM) e la Similarità Cosine**
 Il **modello spazio vettoriale*** rappresenta sia la query che i documenti come vettori pesati $tf-idf$. I termini fungono da assi in uno spazio vettoriale di dimensione $|V|$, mentre i documenti sono i punti o i vettori in questo spazio.
 L'idea chiave e' quella di rankare i documenti in base alla loro prossimita' al vettore della query in questo spazio.
 
 La distanza euclidea si rivela una **pessima misura di prossimita'**, in quanto e' troppo influenzata dalla lunghezza dei vettori (ovvero dalla *lunghezza dei documenti*). Un documento e la sua copia appesa a se stesso avrebbero una grande distanza euclidea pur avendo lo stesso contenuto semantico.
 
-Per superare questo problema, si e' deciso di utilizzare l'angolo tra i vettori come misura di similarita'.
-
+Per superare questo problema, si e' deciso di utilizzare l'angolo tra i vettori come misura di similarita'.P
 ## **Normalizzazione e Coseno di Similitudine**
-Prima di misurare l'angolo, si procede alla normalizzazione della lunghezza: il vettore viene normalizzato **dividendo ciascuna delle sue componenit per la sua norma L2**. Questo produce un vettore unitario. L'effetto risultante e' che i documenti lunghi e corti ora hanno pesi comparabili, e i documenti **semanticamente** ***equivalenti*** avranno vettori identici dopo la normalizzazione.
+Prima di misurare l'angolo, si procede alla normalizzazione della lunghezza: il vettore viene normalizzato **dividendo ciascuna delle sue componenti per la sua norma L2**. Questo produce un vettore unitario. L'effetto risultante e' che i documenti lunghi e corti ora hanno pesi comparabili, e i documenti **semanticamente** ***equivalenti*** avranno vettori identici dopo la normalizzazione.
 
 **Norma L2:**
 
