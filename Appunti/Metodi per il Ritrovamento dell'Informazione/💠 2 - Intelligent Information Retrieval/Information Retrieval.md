@@ -162,7 +162,7 @@ cos(\vec{q},\vec{d}) = \frac{\vec{q}\cdot\vec{d}}{|\vec{q}||\vec{d}|} = \frac{\v
 $$
 
 dove:
-- $q_i$ e' il peso $tf-idf$ del termine i nella query;
-- $d_i$ e' il peso $tf-idf$ del termine i nel documento.
+- $q_i$ e' il peso $tf-idf$ del termine $i$ nella query;
+- $d_i$ e' il peso $tf-idf$ del termine $i$ nel documento.
 
 Per i vettori $q$ e $d$ che sono gia' normalizzati in lunghezza, la **similarita' coseno** e' semplicemente il loro ***prodotto scalare***.
