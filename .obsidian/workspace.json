@@ -4,39 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "75e73582accee220",
+        "id": "45a70b08702cab6d",
         "type": "tabs",
         "children": [
           {
-            "id": "f76fee63d7c34dbc",
+            "id": "361d29a786893211",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti/Metodi per il Ritrovamento dell'Informazione/2 - Information Retrieval.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2 - Information Retrieval"
-            }
-          },
-          {
-            "id": "693d24df579b74ef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti/Metodi per il Ritrovamento dell'Informazione/💠 2 - Intelligent Information Retrieval/Information Retrieval.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Information Retrieval"
+              "title": "Nuova scheda"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -196,7 +177,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "693d24df579b74ef",
+  "active": "cd33f40c14a11b3b",
   "lastOpenFiles": [
     "Appunti/Metodi per il Ritrovamento dell'Informazione/Proprieta' dei Logaritmi.md",
     "Appunti/Metodi per il Ritrovamento dell'Informazione/💠 2 - Intelligent Information Retrieval/Information Retrieval.md",
