@@ -75,4 +75,6 @@ Ogni flusso di dati e' identificato da un numero di porta sorgente, che consente
 Il **demultiplexing** e' il processo inverso: quando i segmenti arrivano al dispositivo di destinazione, il livello di trasporto analizza le informazioni contenute nell'intestazione per consegnare ciascun segmento all'applicazione corretta.
 
 Il multiplexing e demultiplexing si basano sull’uso congiunto di **indirizzi IP** (*che identificano l'host*) e **numeri di porta** (*che identificano l'applicazione*).
+
 ``(IP sorgente, porta sorgente) ↔ (IP destinazione, porta destinazione)``
+
