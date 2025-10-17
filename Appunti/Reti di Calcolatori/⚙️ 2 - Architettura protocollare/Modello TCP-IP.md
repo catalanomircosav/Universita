@@ -34,3 +34,26 @@ Non esiste alcun protocollo specifico per questo livello, ma supporta tutti i pr
 Il livello fisico si occupa di trasferire i singoli bit attraverso il collegamento. La comunicazione tra due dispositivi e' ancora una comunicazione logica, perche' vi e' un livello nascosto, ovvero il mezzo trasmissivo al di sotto del livello fisico. Due dispositivi sono collegati tramite un mezzo trasmissivo, ma non trasporta bit, bensì segnali elettrici / ottici.
 Il livello fisico si occupa di **trasferire i singoli bit** di un flusso dati attraverso il mezzo trasmissivo, convertendoli in segnali elettrici, ottici o radio a seconda della tecnologia utilizzata (rame, fibra ottica, onde radio, ecc.).  
 Definisce quindi **le caratteristiche meccaniche, elettriche, funzionali e procedurali** necessarie per l’attivazione, il mantenimento e la disattivazione del collegamento fisico tra dispositivi.
+
+## **Incapsulamento e Decapsulamento**
+Nel modello **TCP/IP**, i dati viaggiano attraverso tutti i livelli (*applicazione*, *trasporto*, *rete*, *collegamento*, *fisico*). Ogni livello aggiunge o rimuove informazioni necessarie per permettere tra due terminali di comunicare in rete.
+Il processo che **aggiunge** informazioni mentre i dati scendono lungo i livelli si chiama ***incapsulamento***: ad ogni livello, viene aggiunta un'intestazione con informazioni specifiche per quel livello. (*svolto dal mittente*)
+Il processo inverso si chiama ***decapsulamento*** ed e' il processo che rimuove la propria intestazione, interpretando le informazioni e passando il loro contenuto al livello superiore. (*svolto dal destinatario*).
+
+In particolare:
+- **incapsulamento nell'host sorgente**: 
+	- A livello **applicazione**, i dati da scambiare vengono chiamati messaggi e, di solito, non contengono **header**. 
+	- A livello **trasporto** il messaggio viene chiamato **segmento/datagramma** (*a seconda del protocollo utilizzato*) e vengono aggiunte informazioni per la sua gestione a quel livello. 
+	- Il livello **rete** aggiunge altre informazioni, quali gli indirizzi della sorgente e destinatario e informazioni utilizzate per il controllo degli errori, frammentazione, ecc. Qui viene chiamato **datagramma**. 
+	- A livello di **collegamento** il pacchetto e' chiamato **frame** e vengono aggiunte informazioni quali indirizzo del livello di collegamento e del **next-hop** (*router*).
+	
+- **incapsulamento e decapsulamento nel router**: Nel router si effettua sia l'incapsulamento che il decapsulamento perche' questi e' collegato a due o piu' link:
+	- L'insieme di bit ricevuto dal livello **fisico** viene passato a livello di collegamento dopo aver decapsulato il **frame**.
+	- Il livello di **rete** consulta solamente gli indirizzi sorgente e destinatario nell'**header** del datagramma e consulta la propria tabella per decidere il **next-hop**. Il datagramma non viene alterato, a meno che non ci sia bisogno di frammentarlo per via di dimensioni eccessive.
+	- Il livello di **collegamento** incapsula il datagramma in un frame e lo passa al livello fisico per la trasmissione.
+
+- **decapsulamento nell'host destinatario**: Ciascun livello nell'host destinatario rimuove la propria intestazione dal pacchetto ricevuto, estraendone il **payload**; questo viene passato al protocollo del livello sovrastante, fino a quando il messaggio raggiunge il livello **applicazione**. 
+
+***NB: IL DECAPSULAMENTO NON COMPORTA ANCHE IL CONTROLLO DEGLI ERRORI.***
+
+## **Indirizzamento**
