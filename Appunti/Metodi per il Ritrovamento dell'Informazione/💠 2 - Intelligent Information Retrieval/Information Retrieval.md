@@ -158,7 +158,7 @@ $$||\vec{x}||_2 = \sqrt{\sum_i x_i^2}$$
 Rankare i documenti in modo decrescente dell'angolo e' equivalente a rankarli in ordine crescente del **coseno dell'angolo** (il coseno e' **monotonicamente decrescente nell'intervallo 0 - 180 gradi**)
 
 $$
-cos(\vec{q},\vec{d}) = \frac{\vec{q}\cdot\vec{d}}{|\vec{q}||\vec{d}|} = \frac{\vec{q}}{|\vec{q}|}\cdot\frac{\vec{d}}{|\vec{d}|} = \frac{\sum_{i+1}^{|V|}q_i\cdot d_i^2}{\sqrt{\sum_{i=1}^{|V|}q_i^2} \cdot \sqrt{\sum_{i=1}^{|V|}d_i^2}}
+cos(\vec{q},\vec{d}) = \frac{\vec{q}\cdot\vec{d}}{|\vec{q}||\vec{d}|} = \frac{\vec{q}}{|\vec{q}|}\cdot\frac{\vec{d}}{|\vec{d}|} = \frac{\sum_{i+1}^{|V|}q_i\cdot d_i}{\sqrt{\sum_{i=1}^{|V|}q_i^2} \cdot \sqrt{\sum_{i=1}^{|V|}d_i^2}}
 $$
 
 dove:
