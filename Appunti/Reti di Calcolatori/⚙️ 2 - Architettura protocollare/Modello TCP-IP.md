@@ -36,7 +36,7 @@ Il livello fisico si occupa di **trasferire i singoli bit** di un flusso dati at
 Definisce quindi **le caratteristiche meccaniche, elettriche, funzionali e procedurali** necessarie per l’attivazione, il mantenimento e la disattivazione del collegamento fisico tra dispositivi.
 
 ## **Incapsulamento e Decapsulamento**
-Nel modello **TCP/IP**, i dati viaggiano attraverso tutti i livelli (*applicazione*, *trasporto*, *rete*, *collegamento*, *fisico*). Ogni livello aggiunge o rimuove informazioni necessarie per permettere tra due terminali di comunicare in rete.
+Nel modello **TCP/IP**, i dati viaggiano attraverso tutti i livelli (*applicazione*, *trasporto*, *rete*, *collegamento*, *fisico*). Ogni livello aggiunge o rimuove informazioni necessarie per permettere permettere **la comunicazione tra** due terminali.
 Il processo che **aggiunge** informazioni mentre i dati scendono lungo i livelli si chiama ***incapsulamento***: ad ogni livello, viene aggiunta un'intestazione con informazioni specifiche per quel livello. (*svolto dal mittente*)
 Il processo inverso si chiama ***decapsulamento*** ed e' il processo che rimuove la propria intestazione, interpretando le informazioni e passando il loro contenuto al livello superiore. (*svolto dal destinatario*).
 
@@ -54,6 +54,6 @@ In particolare:
 
 - **decapsulamento nell'host destinatario**: Ciascun livello nell'host destinatario rimuove la propria intestazione dal pacchetto ricevuto, estraendone il **payload**; questo viene passato al protocollo del livello sovrastante, fino a quando il messaggio raggiunge il livello **applicazione**. 
 
-***NB: IL DECAPSULAMENTO NON COMPORTA ANCHE IL CONTROLLO DEGLI ERRORI.***
+***NB: Il decapsulamento di per sé non implica la correzione degli errori, ma solo l’estrazione dei dati. Il controllo degli errori, se previsto, viene effettuato dal livello di trasporto o di collegamento, a seconda del protocollo.***
 
 ## **Indirizzamento**
