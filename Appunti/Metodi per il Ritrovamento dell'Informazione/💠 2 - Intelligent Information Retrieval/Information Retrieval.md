@@ -145,7 +145,7 @@ $$score(d,q) = \sum_{t\in q\cap d}tf_{t,d} \times idf_t$$
 Il **modello spazio vettoriale*** rappresenta sia la query che i documenti come vettori pesati $tf-idf$. I termini fungono da assi in uno spazio vettoriale di dimensione $|V|$, mentre i documenti sono i punti o i vettori in questo spazio.
 L'idea chiave e' quella di rankare i documenti in base alla loro prossimita' al vettore della query in questo spazio.
 
-La distanza euclidea si rivela una **pessima misura di prossimita'**, in quanto e' troppo influenzata dalla lunghezza dei vettori (ovvero dalla *lunghezza dei documenti*). Un documento e la sua copia appesa a se stesso avrebbero una grande distanza euclidea pur avendo lo stesso contenuto semantico.
+La distanza euclidea si rivela una **pessima misura di prossimità**, in quanto e' troppo influenzata dalla lunghezza dei vettori (ovvero dalla *lunghezza dei documenti*). Un documento e la sua copia appesa a se stesso avrebbero una grande distanza euclidea pur avendo lo stesso contenuto semantico.
 
 Per superare questo problema, si e' deciso di utilizzare l'angolo tra i vettori come misura di similarita'.
 ## **Normalizzazione e Coseno di Similitudine**
