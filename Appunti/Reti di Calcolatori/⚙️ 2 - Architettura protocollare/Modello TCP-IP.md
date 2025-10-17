@@ -57,3 +57,13 @@ In particolare:
 ***NB: Il decapsulamento di per sé non implica la correzione degli errori, ma solo l’estrazione dei dati. Il controllo degli errori, se previsto, viene effettuato dal livello di trasporto o di collegamento, a seconda del protocollo.***
 
 ## **Indirizzamento**
+L’**indirizzamento** è il meccanismo mediante il quale ogni dispositivo in una rete viene identificato univocamente, permettendo l’inoltro dei dati verso la destinazione corretta.
+Qualsiasi comunicazione che coinvolge due parti richiede due indirizzi: **indirizzo sorgente** e l'**indirizzo destinazione**.
+
+- A livello **applicazione** vengono utilizzati di solito *nomi simbolici* per specificare il servizio, come *elearning.uniba.it*;
+- A livello **trasporto** vengono utilizzati i *numeri di porta* che indicano i programmi sorgente e destinazione del livello applicazione; 
+- A livello **rete** gli indirizzi sono e devono identificare **univocamente** il collegamento di un dispositivo a Internet.
+- A livello di **collegamento** gli indirizzi sono chiamati **MAC** e sono indirizzi definiti localmente, stampati sulla scheda di rete dal produttore e identificano univocamente una determinata interfaccia di rete.
+- Il livello **fisico** non necessita di indirizzi.
+
+![[indirizzamento-tcp-ip.png]]
