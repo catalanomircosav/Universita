@@ -58,7 +58,7 @@ ___
 - 🕐 2h teoria (*mattina*)
 - 🧩 1h esercizi (*e eventuale rifinitura degli argomenti della mattina*)
 **Ogni weekend**
-- 🧾 1 simulazione d’esame  
+- 🧾 1/2 simulazione d’esame  
 - 🛠️ 1h revisione errori e concetti deboli  
 ___
 ## 📘 Obiettivi finali
