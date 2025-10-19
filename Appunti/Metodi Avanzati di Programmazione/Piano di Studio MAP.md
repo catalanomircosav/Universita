@@ -46,7 +46,7 @@ ___
 | **Sab 8 nov** | Revisione punti deboli                             | Correggere errori ricorrenti             |
 | **Dom 9 nov** | Ripasso finale generale                            | Mappe mentali e definizioni chiave       |
 
-> 🎯 **Obiettivo settimana:** dominare il codice Java e saper spiegare concetti OO e gestione eccezioni.
+> 🎯 **Obiettivo settimana:** dominare il codice Java e saper spiegare concetti OO.
 ---
 ## 📅 ULTIMO GIORNO
 | Giorno         | Attività                                   |
