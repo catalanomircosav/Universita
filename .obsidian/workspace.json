@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti/Metodi Avanzati di Programmazione/Piano di Studio MAP.md",
+                "file": "Appunti/Metodi Avanzati di Programmazione/2. Astrazione nella programmazione.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Piano di Studio MAP"
+              "title": "2. Astrazione nella programmazione"
             }
           }
         ]
@@ -183,8 +183,10 @@
   },
   "active": "361d29a786893211",
   "lastOpenFiles": [
-    "Appunti/Reti di Calcolatori/🖥️ 3 - Architetture Parallele/Architetture Parallele.md",
+    "Appunti/Metodi Avanzati di Programmazione/1. Astrazione nella progettazione.md",
+    "Appunti/Calcolabilita e Complessita/1. Automi Finiti.md",
     "Appunti/Metodi Avanzati di Programmazione/Piano di Studio MAP.md",
+    "Appunti/Reti di Calcolatori/🖥️ 3 - Architetture Parallele/Architetture Parallele.md",
     "Appunti/Metodi per il Ritrovamento dell'Informazione/💠 2 - Intelligent Information Retrieval/Information Retrieval.md",
     "Appunti/Reti di Calcolatori/🖥️ 3 - Architetture Parallele",
     "Appunti/Reti di Calcolatori/La linea di Comandi di Windows.md",
