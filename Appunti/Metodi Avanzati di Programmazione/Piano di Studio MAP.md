@@ -55,10 +55,8 @@ ___
 ___
 ## 🧠 Metodo di studio
 **Ogni giorno**
-- 🕐 1h teoria → lettura, mappa concettuale, appunti sintetici  
-- 🧩 1h esercizi → scrivere specifiche, disegnare diagrammi, scrivere codice  
-- 🔁 30 min → ripasso orale del giorno precedente  
-
+- 🕐 2h teoria (*mattina*)
+- 🧩 1h esercizi (*e eventuale rifinitura degli argomenti della mattina*)
 **Ogni weekend**
 - 🧾 1 simulazione d’esame  
 - 🛠️ 1h revisione errori e concetti deboli  
@@ -70,3 +68,4 @@ ___
 - [ ] Gestire eccezioni (checked / unchecked)  
 - [ ] Essere pronto per simulazioni complete
 ---
+**SI PARTE OGNI GIORNO ALLE $8$, POST ALLENAMENTO, COLAZIONE E DOCCIA**
