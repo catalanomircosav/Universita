@@ -8,15 +8,15 @@
 ___
 ## 📅 SETTIMANA 1 — Fondamenta e Specifiche Algebriche (Esercizio 1)
 
-| Giorno | Argomento | Obiettivi principali |
-|--------|------------|----------------------|
+| Giorno         | Argomento                                                         | Obiettivi principali                                                                |
+| -------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
 | **Lun 20 ott** | Concetto di astrazione, interfaccia, specifica vs implementazione | Comprendere le differenze concettuali tra astrazione, interfaccia e implementazione |
-| **Mar 21 ott** | Struttura di una specifica algebrica (sorts, operations, axioms) | Scrivere una specifica formale da zero |
-| **Mer 22 ott** | Esercizi su specifiche (Pila, Coda, Conto Corrente) | Applicare proprietà e assiomi nelle specifiche |
-| **Gio 23 ott** | Correttezza e uguaglianza osservazionale | Verificare specifiche e uguaglianze tra implementazioni |
-| **Ven 24 ott** | Simulazione Esercizio 1 completo | Risolvere un esercizio d’esame in tempo reale |
-| **Sab 25 ott** | Astrazione di dati e controllo (Macro 2A–C) | Collegare concetti teorici a pseudocodice / ADA |
-| **Dom 26 ott** | Ripasso completo Macro 1–2 + esercizi specifiche | Consolidamento teoria + pratica |
+| **Mar 21 ott** | Struttura di una specifica algebrica (sorts, operations, axioms)  | Scrivere una specifica formale da zero                                              |
+| **Mer 22 ott** | Esercizi su specifiche (Pila, Coda, Conto Corrente)               | Applicare proprietà e assiomi nelle specifiche                                      |
+| **Gio 23 ott** | Correttezza e uguaglianza osservazionale                          | Verificare specifiche e uguaglianze tra implementazioni                             |
+| **Ven 24 ott** | Simulazione Esercizio 1 completo                                  | Risolvere un esercizio d’esame in tempo reale                                       |
+| **Sab 25 ott** | Astrazione di dati e controllo (Macro 2A–C)                       | Collegare concetti teorici a pseudocodice / ADA                                     |
+| **Dom 26 ott** | Ripasso completo Macro 1–2 + esercizi specifiche                  | Consolidamento teoria + pratica                                                     |
 
 > 🎯 **Obiettivo settimana:** scrivere, leggere e validare una specifica algebrica con sicurezza.
 ---

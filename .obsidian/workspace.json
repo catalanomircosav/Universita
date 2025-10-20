@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti/Metodi Avanzati di Programmazione/1. Astrazione nella progettazione.md",
+                "file": "Appunti/Metodi Avanzati di Programmazione/Astrazione nella progettazione.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1. Astrazione nella progettazione"
+              "title": "Astrazione nella progettazione"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "11d4287befb9fcba",
@@ -183,10 +184,15 @@
   },
   "active": "361d29a786893211",
   "lastOpenFiles": [
-    "Appunti/Metodi Avanzati di Programmazione/2. Astrazione nella programmazione.md",
-    "Appunti/Metodi Avanzati di Programmazione/1. Astrazione nella progettazione.md",
-    "Appunti/Calcolabilita e Complessita/1. Automi Finiti.md",
     "Appunti/Metodi Avanzati di Programmazione/Piano di Studio MAP.md",
+    "Appunti/Metodi Avanzati di Programmazione/Astrazione nella progettazione.md",
+    "Appunti/Metodi Avanzati di Programmazione/3. ADA.md",
+    "Appunti/Metodi Avanzati di Programmazione/1. Astrazione nella progettazione.md",
+    "Appunti/Metodi Avanzati di Programmazione/Appendici/d. Tecniche di programmazione.md",
+    "Appunti/Metodi Avanzati di Programmazione/Appendici/b. Gestione delle eccezioni.md",
+    "Appunti/Metodi Avanzati di Programmazione/Appendici/a. Tecniche di progettazione.md",
+    "Appunti/Metodi Avanzati di Programmazione/2. Astrazione nella programmazione.md",
+    "Appunti/Calcolabilita e Complessita/1. Automi Finiti.md",
     "Appunti/Reti di Calcolatori/🖥️ 3 - Architetture Parallele/Architetture Parallele.md",
     "Appunti/Metodi per il Ritrovamento dell'Informazione/💠 2 - Intelligent Information Retrieval/Information Retrieval.md",
     "Appunti/Reti di Calcolatori/🖥️ 3 - Architetture Parallele",
