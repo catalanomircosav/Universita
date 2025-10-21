@@ -38,6 +38,7 @@ dove:
 La **query modificata** viene definita come una combinazione lineare della query originale, del centroide dei documenti rilevanti noti e del centroide dei documenti non rilevanti noti:
 
 $$q_m = \alpha\cdot q_0 + \beta\times\frac{1}{|D_r|}\times\sum_{d_j\in D_r} d_j - \gamma\cdot\frac{1}{|D_n|}\times\sum_{d_j\in D_n}d_j$$
+
 in questa formula, $\alpha,\beta,\gamma$ sono peso scelti **empiricamente** o **a mano**. L'effetto è che **la nuova query si sposta verso i documenti rilevanti noti e si allontana da quelli non rilevanti noti**.
 
 Tuttavia, l'algoritmo di per se porta alcuni problemi:
