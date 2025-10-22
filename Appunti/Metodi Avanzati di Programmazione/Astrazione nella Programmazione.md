@@ -60,3 +60,6 @@ control I(FP1; FPn) is S
 ```
 dove `S` e' l'**espressione di controllo** che definisce l'ordine di esecuzione delle istruzioni.
 
+**NB: IN ADA LE STRUTTURE DI CONTROLLO SONO DI TERZA CLASSE, PERCHE' FISSE NELLA SINTATTI E NON MANIPOLABILI COME VALORI**.
+
+## **Astrazione di selettore**
