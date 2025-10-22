@@ -147,7 +147,7 @@ L'idea chiave e' quella di rankare i documenti in base alla loro prossimita' al 
 
 La distanza euclidea si rivela una **pessima misura di prossimità**, in quanto e' troppo influenzata dalla lunghezza dei vettori (ovvero dalla *lunghezza dei documenti*). Un documento e la sua copia appesa a se stesso avrebbero una grande distanza euclidea pur avendo lo stesso contenuto semantico.
 
-Per superare questo problema, si e' deciso di utilizzare l'angolo tra i vettori come misura di similarita'.
+Per superare questo problema, si è deciso di utilizzare l'angolo tra i vettori come misura di similarità.
 ## **Normalizzazione e Similarità del coseno**
 Prima di misurare l'angolo, si procede alla normalizzazione della lunghezza: il vettore viene normalizzato **dividendo ciascuna delle sue componenti per la sua norma L2**. Questo produce u\n vettore unitario. L'effetto risultante e' che i documenti lunghi e corti ora hanno pesi comparabili, e i documenti **semanticamente** ***equivalenti*** avranno vettori identici dopo la normalizzazione.
 
