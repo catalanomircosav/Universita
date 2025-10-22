@@ -60,6 +60,17 @@ control I(FP1; FPn) is S
 ```
 dove `S` e' l'**espressione di controllo** che definisce l'ordine di esecuzione delle istruzioni.
 
-**NB: IN ADA LE STRUTTURE DI CONTROLLO SONO DI TERZA CLASSE, PERCHE' FISSE NELLA SINTATTI E NON MANIPOLABILI COME VALORI**.
+**NB: IN ADA NON E' POSSIBILE DEFINIRE NUOVE FORME DI CONTROLLO SINTATTICHE, MA SI POSSONO SIMULARE MEDIANTE PROCEDURE O FUNZIONI DI ORDINE SUPERIORE: IN ADA LE STRUTTURE DI CONTROLLO SONO PERCIO' DI TERZA CLASSE, PERCHE' FISSE NELLA SINTASSI E NON MANIPOLABILI COME VALORI**.
 
 ## **Astrazione di selettore**
+Un'astrazione di selettore rappresenta l'**accesso controllato** a una struttura dati.
+
+E' definita come:
+```
+selector I(FP1;...;FPn) is A
+```
+dove `A` e' l'espressione che restituisce l'**accesso** a una variabile.
+
+**NB: NON C'E' LA POSSIBILITA' DI DEFINIRE ASTRAZIONI DI SELETTORE CHE RESTITUISCANO L'ACCESSO A UN'AREA DI MEMORIA**.
+
+## **Astrazione di tipo**
