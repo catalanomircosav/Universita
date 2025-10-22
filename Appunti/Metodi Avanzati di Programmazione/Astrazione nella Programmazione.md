@@ -40,3 +40,22 @@ In questo modo si lega `I` all'astrazione di procedura che cambiera' lo stato de
 
 > La decisione su quale sia la tecnica migliore da usare tra l'astrazione di *funzione* o *procedura* dipende dal **tipo di operatore progettato** e dai **limiti del linguaggio** di programmazione.
 
+## **Astrazione di controllo**
+Un'astrazione di controllo include delle **espressioni di ordine di esecuzione** delle istruzioni.
+- Il **linguaggio macchina** mette a disposizione del programma costrutti banali come l'**elaborazione in sequenza** e il **salto**.
+	- Il salto e' rappresentato mediante l'istruzione `jump to <indirizzo simbolico o label>`
+		- Quest'ultimo e' di scarsa importanza per il programmatore, perche' la cosa importante e' riuscire a indicare le prossime istruzioni da eseguire. Questo e' il motivo per cui i linguaggi di programmazione ad alto livello hanno introdotto strutture di controllo.
+- I **linguaggi ad alto livello** hanno introdotto strutture come la **selezione**, l'**iterazione** e chiamate **ricorsive** (*tramite l'utilizzo dello stack*).
+	- L'attuale tendenza porta a offrire strutture di controllo iterative per dati che sono collezioni omogenee di valori.
+
+La struttura di controllo iterativa ha due parametri, il **dato astratto** e una variabile alla quale assegnarne il contenuto. Il meccanismo di visita e' incapsulato come operazione lecita all'interno del dato astratto.
+> esempio: 
+> - `for-each` di `JAVA`.
+> - `iterator()`
+
+E' definita come:
+```
+control I(FP1; FPn) is S
+```
+dove `S` e' l'**espressione di controllo** che definisce l'ordine di esecuzione delle istruzioni
+
