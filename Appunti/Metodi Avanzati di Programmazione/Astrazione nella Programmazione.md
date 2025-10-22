@@ -24,7 +24,7 @@ In questo modo si lega `I` all'astrazione di funzione che restituira' un risulta
 - Se l'astrazione di funzione include un'espressione `E` da valutare, non ci sono comandi da eseguire. 
 	- Tuttavia, molti linguaggi di programmazione hanno dato la possibilita' di inserire comandi all'interno delle funzioni in modo da sfruttare a pieno la potenza computazionale.
 
-**NB: IN ADA LE FUNZIONI SONO CITTADINI DI TERZA CLASSE, OVVERO POSSONO ESSERE SOLO CHIAMATE, MENTRE IN ALTRI SONO DI SECONDA (es. PASCAL), IN ALTRI ANCORA SONO DI PRIMA CLASSE.**
+**NB: IN ADA MODERNO LE FUNZIONI SONO CITTADINI DI PRIMA CLASSE CLASSE, MENTRE NELLE VERSIONI PIU' VECCHIE SONO DI TERZA CLASSE, OVVERO POSSONO ESSERE SOLO CHIAMATE, MENTRE IN ALTRI SONO DI SECONDA (es. PASCAL), IN ALTRI ANCORA SONO DI PRIMA CLASSE.**
 
 ## **Astrazione di procedura**
 Un'astrazione di procedura include un **comando da eseguire** e, quando chiamata, **aggiornera' le variabili che rappresentano lo stato del sistema**.
