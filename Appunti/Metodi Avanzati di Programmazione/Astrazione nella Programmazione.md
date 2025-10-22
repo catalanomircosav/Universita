@@ -14,7 +14,7 @@ Al momento, esistono sei classi sintattiche, che corrispondono a sei tipi di ast
 ## **Astrazione di funzione**
 Un'astrazione di funzione include un'espressione da valutare e quando chiamata, **dara' un valore come risultato**.
 
-E' definita come: `function I(FP1;...;FPn) is E`, dove `I` e' un **identificatore**, `FP1;...;FPn` sono **parametri formali** ed `E` l'espressione da valutare.
+E' definita come: `function I(FP1;...;FPn) is E`, dove `I` e' un **identificatore**, `FP1;...;FPn` sono **parametri formali** ed `E` l'**espressione** da valutare.
 
 In questo modo si lega `I` all'astrazione di funzione che da un risultato ogni volta che viene chiamata con parametri appropriati.
 - Se l'astrazione di funzione include un'espressione `E` da valutare, non ci sono comandi da eseguire. 
