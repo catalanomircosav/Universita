@@ -28,6 +28,7 @@ In questo modo si lega `I` all'astrazione di funzione che restituira' un risulta
 
 ## **Astrazione di procedura**
 Un'astrazione di procedura include un **comando da eseguire** e, quando chiamata, **aggiornera' le variabili che rappresentano lo stato del sistema**.
+
 E' definita come:
 ```
 procedure I(FP1;...;FPn) is C
@@ -57,5 +58,5 @@ E' definita come:
 ```
 control I(FP1; FPn) is S
 ```
-dove `S` e' l'**espressione di controllo** che definisce l'ordine di esecuzione delle istruzioni
+dove `S` e' l'**espressione di controllo** che definisce l'ordine di esecuzione delle istruzioni.
 
