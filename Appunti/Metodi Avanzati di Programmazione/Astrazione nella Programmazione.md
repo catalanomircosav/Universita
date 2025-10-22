@@ -50,7 +50,7 @@ Un'astrazione di controllo include delle **espressioni di ordine di esecuzione**
 
 La struttura di controllo iterativa ha due parametri, il **dato astratto** e una variabile alla quale assegnarne il contenuto. Il meccanismo di visita e' incapsulato come operazione lecita all'interno del dato astratto.
 > esempio: 
-> - `for-each` di `JAVA`.
+> - `for-each`
 > - `iterator()`
 
 E' definita come:
