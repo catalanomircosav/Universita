@@ -35,3 +35,8 @@ procedure I(FP1;...;FPn) is C
 dove `C` e' il **blocco di comandi** da eseguire.
 
 In questo modo si lega `I` all'astrazione di procedura che cambiera' lo stato del sistema ogni volta che verra' chiamata con parametri appropriati.
+
+**NB: IN ADA LE PROCEDURE SONO CITTADINI DI PRIMA CLASSE, OVVERO NON HANNO RESTRIZIONI SULL'UTILIZZO PERCHE' POSSONO ESSERE USATE COME VARIABILI, MENTRE IN ALTRI LINGUAGGI (es. PASCAL, C) SONO CITTADINI DI SECONDA CLASSE**.
+
+> La decisione su quale sia la tecnica migliore da usare tra l'astrazione di *funzione* o *procedura* dipende dal **tipo di operatore progettato** e dai **limiti del linguaggio** di programmazione.
+
