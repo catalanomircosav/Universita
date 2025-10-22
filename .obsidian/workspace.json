@@ -11,10 +11,14 @@
             "id": "b578c5caccf14854",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Appunti/Metodi Avanzati di Programmazione/Astrazione nella Programmazione.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nuova scheda"
+              "title": "Astrazione nella Programmazione"
             }
           }
         ]
@@ -179,8 +183,9 @@
   },
   "active": "b578c5caccf14854",
   "lastOpenFiles": [
+    "Appunti/Metodi Avanzati di Programmazione/Astrazione nella Progettazione.md",
+    "Appunti/Metodi Avanzati di Programmazione/Astrazione nella Programmazione.md",
     "Appunti/Metodi Avanzati di Programmazione/Piano di Studio MAP.md",
-    "Appunti/Metodi Avanzati di Programmazione/Astrazione nella progettazione.md",
     "Appunti/Metodi Avanzati di Programmazione/3. ADA.md",
     "Appunti/Metodi Avanzati di Programmazione/1. Astrazione nella progettazione.md",
     "Appunti/Metodi Avanzati di Programmazione/Appendici/d. Tecniche di programmazione.md",
