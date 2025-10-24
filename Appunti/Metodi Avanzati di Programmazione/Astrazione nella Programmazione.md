@@ -10,6 +10,7 @@ Poiché in un linguaggio di programmazione esistono diverse forme di computazion
 | Selettore  | accesso          | L-value                       |
 | Tipo       | dato             | rappresentazione + operazioni |
 | Generica   | dichiarazione    | nuove dichiarazioni           |
+
 Ognuna di esse nasce per generalizzare un aspetto diverso dell’attività del calcolo.
 ___
 
