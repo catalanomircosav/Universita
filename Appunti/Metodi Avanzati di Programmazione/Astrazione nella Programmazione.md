@@ -1,3 +1,4 @@
+# **Definizione di astrazione**
 L’astrazione è il meccanismo concettuale che permette di descrivere _che cosa fa_ una computazione, senza specificare _come è realizzata al suo interno_. 
 In questo modo il programmatore può ragionare su entità complesse utilizzando nomi e modelli semplici, delegando i dettagli a livelli inferiori.
 Poiché in un linguaggio di programmazione esistono diverse forme di computazione, esistono anche diverse forme di astrazione. Le sei forme fondamentali sono:
