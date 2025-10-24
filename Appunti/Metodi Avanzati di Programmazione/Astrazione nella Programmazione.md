@@ -47,7 +47,9 @@ L’astrazione di tipo permette di introdurre nuovi tipi di dato, definendo:
 - quali valori appartengono al tipo,
 - quali operazioni è lecito applicare,
 - come il tipo viene rappresentato internamente.
+
 Un tipo ben progettato nasconde la propria rappresentazione interna e offre un insieme controllato di operazioni. Questo garantisce coerenza, sicurezza e possibilità di evolvere l’implementazione senza modificare il codice che utilizza il tipo.
+
 Un tipo astratto si descrive attraverso tre categorie di operazioni:
 - **costruttori**, che creano valori del tipo
 - **osservatori**, che ne estraggono informazioni
