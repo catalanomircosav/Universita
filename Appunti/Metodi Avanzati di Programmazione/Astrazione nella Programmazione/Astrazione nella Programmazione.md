@@ -64,3 +64,15 @@ L’astrazione generica non produce dati o effetti, ma **produce dichiarazioni**
 
 >  È un’astrazione _meta_, perché opera sul codice anziché sull’esecuzione: non calcola, ma _genera nuovo codice coerente e riutilizzabile_. Rappresentata come:
 >  `generic I(FP1;...;FPn) is D`
+
+## **Cittadini di prima, seconda e terza classe**
+Un’entità è:
+- **denotabile** se può avere un nome,
+- **esprimibile** se può essere risultato di un’espressione,
+- **memorizzabile** se può essere salvata in una variabile.
+
+| Classe | Caratteristica                         | Esempio                             |
+| ------ | -------------------------------------- | ----------------------------------- |
+| 1ª     | denotabile, esprimibile, memorizzabile | funzioni in ML, oggetti OOP         |
+| 2ª     | non esprimibile o non memorizzabile    | funzioni in Pascal                  |
+| 3ª     | solo denotabile                        | funzioni in FORTRAN, procedure in C |
