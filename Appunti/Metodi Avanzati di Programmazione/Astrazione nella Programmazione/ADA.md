@@ -58,3 +58,12 @@ use Nome_Package;
 ```
 
 in modo da evitare la qualificazione e rendere più leggibile il codice, con la consapevolezza che può ridurre la chiarezza in progetti molto grandi.
+
+### **Conclusione concettuale**
+Il package Ada:
+- incapsula
+- separa interfaccia e implementazione
+- nasconde la rappresentazione
+- permette veri TAD
+- estende la modularità con i `generic`
+- mantiene ordine e visibilità controllata
