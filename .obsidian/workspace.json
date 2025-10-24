@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti/Metodi Avanzati di Programmazione/Astrazione nella Programmazione.md",
+                "file": "Appunti/Metodi Avanzati di Programmazione/ADA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Astrazione nella Programmazione"
+              "title": "ADA"
             }
           }
         ]
@@ -185,9 +185,12 @@
   },
   "active": "361d29a786893211",
   "lastOpenFiles": [
+    "Appunti/Metodi Avanzati di Programmazione/Astrazione nella Programmazione/Astrazione nella Programmazione.md",
+    "Appunti/Metodi Avanzati di Programmazione/ADA.md",
+    "Appunti/Metodi Avanzati di Programmazione/Astrazione nella Programmazione",
+    "Appunti/Metodi Avanzati di Programmazione/Progettazione",
     "conflict-files-obsidian-git.md",
-    "Appunti/Metodi Avanzati di Programmazione/Astrazione nella Programmazione.md",
-    "Appunti/Metodi Avanzati di Programmazione/Astrazione nella Progettazione.md",
+    "Appunti/Metodi Avanzati di Programmazione/Progettazione/Astrazione nella Progettazione.md",
     "Appunti/Metodi per il Ritrovamento dell'Informazione/3 - Relevance Feedback/Relevance Feedback.md",
     "Universita-main/Appunti/Reti di Calcolatori/🖥️ 3 - Architetture Parallele/Architetture Parallele.md",
     "Universita-main/Appunti/Reti di Calcolatori/⚙️ 2 - Architettura protocollare/protocollo-tcp-ip.png",
@@ -216,13 +219,10 @@
     "Universita-main/Appunti/Calcolabilita e Complessita/1. Automi Finiti.md",
     "Universita-main/Appunti/Reti di Calcolatori",
     "Universita-main/Appunti/Metodi per il Ritrovamento dell'Informazione",
-    "Universita-main/Appunti/Metodi Avanzati di Programmazione",
-    "Universita-main/Appunti/Calcolabilita e Complessita",
     "Appunti/Metodi per il Ritrovamento dell'Informazione/💠 2 - Intelligent Information Retrieval/Information Retrieval.md",
-    "Appunti/Metodi Avanzati di Programmazione/Piano di Studio MAP.md",
+    "Appunti/Metodi Avanzati di Programmazione/Astrazione nella Programmazione/Piano di Studio MAP.md",
     "Appunti/Reti di Calcolatori/La linea di Comandi di Windows.md",
     "Appunti/Reti di Calcolatori/🖥️ 3 - Architetture Parallele/Architetture Parallele.md",
-    "Appunti/Metodi Avanzati di Programmazione/3. ADA.md",
     "Appunti/Reti di Calcolatori/⚙️ 2 - Architettura protocollare/indirizzamento-tcp-ip.png",
     "Appunti/Reti di Calcolatori/⚙️ 2 - Architettura protocollare/protocollo-tcp-ip.png",
     "immagini/protocollo tcp-ip.png",
