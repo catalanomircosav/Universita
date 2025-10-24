@@ -1,4 +1,5 @@
 ___
+# **Package in ADA**
 In Ada, il package è l’unità fondamentale di **modularità, incapsulamento e astrazione**. Il suo scopo è separare ciò che un’unità _offre_ (interfaccia) da come è _implementata_. Questo rende il codice più sicuro, mantenibile ed estensibile.
 
 Un package Ada è diviso in due parti:
