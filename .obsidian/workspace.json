@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti/Metodi per il Ritrovamento dell'Informazione/💠 2 - Intelligent Information Retrieval/Information Retrieval.md",
+                "file": "Appunti/Metodi per il Ritrovamento dell'Informazione/3 - Relevance Feedback/Relevance Feedback.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Information Retrieval"
+              "title": "Relevance Feedback"
             }
           }
         ]
@@ -184,6 +184,7 @@
   },
   "active": "361d29a786893211",
   "lastOpenFiles": [
+    "Appunti/Metodi per il Ritrovamento dell'Informazione/💠 2 - Intelligent Information Retrieval/Information Retrieval.md",
     "Appunti/Metodi per il Ritrovamento dell'Informazione/3 - Relevance Feedback/Relevance Feedback.md",
     "Appunti/Metodi Avanzati di Programmazione/Astrazione nella progettazione.md",
     "Appunti/Metodi per il Ritrovamento dell'Informazione/3 - Relevance Feedback",
@@ -197,7 +198,6 @@
     "Appunti/Metodi Avanzati di Programmazione/Appendici/a. Tecniche di progettazione.md",
     "Appunti/Metodi Avanzati di Programmazione/2. Astrazione nella programmazione.md",
     "Appunti/Calcolabilita e Complessita/1. Automi Finiti.md",
-    "Appunti/Metodi per il Ritrovamento dell'Informazione/💠 2 - Intelligent Information Retrieval/Information Retrieval.md",
     "Appunti/Reti di Calcolatori/🖥️ 3 - Architetture Parallele",
     "Appunti/Reti di Calcolatori/⚙️ 2 - Architettura protocollare/Modello TCP-IP.md",
     "Appunti/Reti di Calcolatori/Glossario.md",
