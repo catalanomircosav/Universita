@@ -22,15 +22,15 @@ ___
 ---
 ## 📅 SETTIMANA 2 — Modellazione (Esercizio 2)
 
-| Giorno | Argomento | Obiettivi principali |
-|--------|------------|----------------------|
-| **Lun 27 ott** | Paradigma OO: classi, oggetti, messaggi | Riconoscere astrazioni e ruoli nelle classi |
+| Giorno         | Argomento                                           | Obiettivi principali                        |
+| -------------- | --------------------------------------------------- | ------------------------------------------- |
+| **Lun 27 ott** | Paradigma OO: classi, oggetti, messaggi             | Riconoscere astrazioni e ruoli nelle classi |
 | **Mar 28 ott** | Relazioni: ereditarietà, aggregazione, composizione | Rappresentare relazioni corrette tra classi |
-| **Mer 29 ott** | UML – diagrammi di classi e casi d’uso | Disegnare modelli coerenti e leggibili |
-| **Gio 30 ott** | ADA – package, tipi, incapsulamento | Comprendere astrazioni di controllo e dati |
-| **Ven 31 ott** | Java – astrazioni di tipo e controllo | Usare interfacce e classi astratte |
-| **Sab 1 nov** | Esercizi misti (UML ↔ codice ADA/Java) | Passare da teoria a implementazione |
-| **Dom 2 nov** | Simulazione Esercizio 2 | Esercizio completo su modellazione |
+| **Mer 29 ott** | UML – diagrammi di classi e casi d’uso              | Disegnare modelli coerenti e leggibili      |
+| **Gio 30 ott** | ADA – package, tipi, incapsulamento                 | Comprendere astrazioni di controllo e dati  |
+| **Ven 31 ott** | Java – astrazioni di tipo e controllo               | Usare interfacce e classi astratte          |
+| **Sab 1 nov**  | Esercizi misti (UML ↔ codice ADA/Java)              | Passare da teoria a implementazione         |
+| **Dom 2 nov**  | Simulazione Esercizio 2                             | Esercizio completo su modellazione          |
 
 > 🎯 **Obiettivo settimana:** rappresentare un concetto in più linguaggi (UML, ADA, Java).
 ---
