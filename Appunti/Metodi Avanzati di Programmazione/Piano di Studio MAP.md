@@ -62,10 +62,8 @@ ___
 - 🛠️ 1h revisione errori e concetti deboli  
 ___
 ## 📘 Obiettivi finali
-- [ ] Scrivere e leggere specifiche algebriche  
+- [x] Scrivere e leggere specifiche algebriche  
 - [ ] Passare da teoria a modello (UML/ADA/Java)  
 - [ ] Spiegare e implementare astrazioni in Java  
 - [ ] Gestire eccezioni (checked / unchecked)  
 - [ ] Essere pronto per simulazioni complete
----
-**SI PARTE OGNI GIORNO ALLE $8$, POST ALLENAMENTO, COLAZIONE E DOCCIA**
