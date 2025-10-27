@@ -49,11 +49,37 @@ Queste relazioni costituiscono la base per la modellazione concettuale dei siste
 | **Alias**          | Più riferimenti che puntano allo stesso oggetto.                 | Possono generare effetti collaterali se non gestiti correttamente.            |
 | **Relazioni**      | Collegamenti logici fra oggetti.                                 | Permettono di costruire modelli complessi e interdipendenti.                  |
 ___
-## 3. UML e rappresentazione degli oggetti
-- UML come linguaggio standard per modellare sistemi OO.  
-- Rappresentazione grafica di oggetti e istanze.  
-- Stato, attributi e metodi nelle classi UML.
+## **UML**
+**UML (Unified Modelling Language)** è un linguaggio visuale per definire, progettare, realizzare e documentare sistemi orientati agli oggetti.
 
+### **Oggetti in UML**
+In UML puoi disegnare un’**istanza** di oggetto indicando:
+- solo il **nome dell’istanza**,
+- nome dell’istanza **e** della **classe** (`oggetto:classe`),
+- solo la **classe** (`:classe`)
+- perfino un’**istanza orfana** se la classe non è nota.
+
+### **Classi in UML**
+Una **classe** descrive una famiglia di oggetti con **struttura** (attributi) e **comportamento** (operazioni). In UML è un rettangolo con fino a tre sezioni: **nome**, **attributi**, **operazioni**.
+
+**Operazioni vs metodi.** UML distingue il **servizio dichiarato** (operazione) dalla **sua implementazione** (metodo). Nel modello ti interessa la **firma** e le **proprietà**, non il codice.
+
+### **Visibilità e molteplicità**
+Gli attributi e i metodi di una classe possono avere diversi livelli di visibilità. Un elemento (attributo o metodo) ha visibilità:
+- **pubblica**: quando può essere visto (utilizzato, invocato) da altre classi,
+- **privata**: quando può essere visto solo dalla classe di appartenenza,
+- **protected**: quando puo' essere visto solo all'interno del package e ai discendenti,
+- **package**: quando puo' essere visto solo all'interno del package.
+
+`+` **public**, `#` **protected**, `-` **private**, `~` **package**.  
+Usala per comunicare **contratti** e **incapsulamento**, non per ribadire tutto il design del linguaggio. Mantieni il diagramma focalizzato su cosa è **pubblico** per i clienti della classe.
+
+**Molteplicità**:
+- **di classe**: quante istanze possono esistere (es. `1` per un **Singleton**; utile per vincoli architetturali).
+- **di attributo**: quante istanze di un tipo collego a un oggetto (es. `porte[2..*]:Port`).  
+    Ricordati che indicare la molteplicità negli attributi chiarisce subito **cardinalità e collezioni** senza dover introdurre per forza un’associazione separata.
+
+**Proprietà degli attributi** (quando serve rigore): `changeable` (*senza restrizioni*), `addOnly` (*valori che non possono essere rimossi*), `frozen` (*valore non modificabili)*. Sono preziose per vincoli d’invarianza (es. ID immutabili).
 ## 4. Le Classi
 - Descrizione di famiglie di oggetti con struttura e comportamento comuni.  
 - Componenti statiche (attributi) e dinamiche (metodi).  
