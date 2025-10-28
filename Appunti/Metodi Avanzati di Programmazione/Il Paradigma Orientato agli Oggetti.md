@@ -80,15 +80,6 @@ Usala per comunicare **contratti** e **incapsulamento**, non per ribadire tutto 
     Ricordati che indicare la molteplicità negli attributi chiarisce subito **cardinalità e collezioni** senza dover introdurre per forza un’associazione separata.
 
 **Proprietà degli attributi** (quando serve rigore): `changeable` (*senza restrizioni*), `addOnly` (*valori che non possono essere rimossi*), `frozen` (*valore non modificabili)*. Sono preziose per vincoli d’invarianza (es. ID immutabili).
-## 4. Le Classi
-- Descrizione di famiglie di oggetti con struttura e comportamento comuni.  
-- Componenti statiche (attributi) e dinamiche (metodi).  
-- Tipi di metodi: costruttori, accessori, trasformatori, distruttori.  
-- Visibilità (public, private, protected, package).  
-- Attributi statici e derivati, stereotipi UML.  
-- Molteplicità di classi e attributi.  
-- Proprietà di attributi e operazioni (changeable, frozen, ecc.).  
-- Classi attive e template (generiche).
 
 ## 5. Ereditarietà
 - Relazione fra classi per riuso e specializzazione.  
