@@ -68,3 +68,42 @@ Una classe interna e' una classe la cui dichiarazione si trova all'interno di un
 - Puo' accedere a tutti i metodi e i campi della classe ospitante, mentre la classe ospitante puo' vedere solo la parte pubblica della *inner class*.
 - Un oggetto di una classe inner non puo' esistere se non esiste un oggetto della classe ospitante. 
 - Non puo' avere campi statici.
+____
+### **Ereditarietà**
+Il meccanismo dell'ereditarietà permette di definire una nuova classe (*sottoclasse*) a partire da una classe esistente (*superclasse*), ereditandone attributi e metodi.
+Permette di riutilizzare il codice e specializzare comportamenti.
+
+- **Principio di sostituibilita' di Liskov**
+	Il principio di sostituibilita' di Liskov stabilisce che un tipo `S` e' un sottotipo di `T` quando e' possibile sostituire tutti gli oggetti di `T` con gli oggetti di `S`, mantenendo intatto il funzionamento del programma. 
+
+Il meccanismo si puo' suddividere in tre tipi:
+- **ereditarieta' per estensione**: la sottoclasse aggiunge nuovi attributi e metodi, ereditando tutti quelli della superclasse. *Questo meccanismo e' compatibile con il principio di sostituibilita' di Liskov.*
+- **ereditarieta' per variazione funzionale**: la sottoclasse ridefinisce (effettua l'*overriding*) di alcuni metodi ereditati dalla superclasse. *Anche questo tipo e' compatibile con il principio di sostituibilita' di Liskov.*
+- **ereditarieta' per implementazione**: la sottoclasse riutilizza l'implementazione della superclasse ma non ne condivide l'interfaccia pubblica. *Permettendo quindi un **riuso** solo **parziale** del codice questo terzo tipo non e' compatibile con il principio di sostituibilita' di Liskov.*
+
+Inoltre, anche l'ereditarieta' permette di definire una molteplicita':
+- **ereditarieta' singola**: Il grafo di ereditarieta' e' in realta' un albero in cui ogni classe ha una sola superclasse diretta.
+	- Quando una classe eredita un metodo da più livelli di superclassi, **la versione più vicina** (cioè quella definita nella prima superclasse che la ridefinisce) è quella effettivamente ereditata.
+
+- **ereditarieta' multipla**: Il grafo di ereditarieta' non e' piu' un albero ma un grafo aciclico orientato.
+	- In caso di ereditarietà multipla, se più superclassi definiscono lo stesso metodo,   si sceglie la versione della **classe più vicina** nella linearizzazione del grafo. **Tutte le altre versioni vengono ignorate (shadowing).**
+
+La relazione di ereditarieta' corrisponde a una relazione di **generalizzazione tra classi (*is_a*)**. Cio' perche' ogni istanza della sottoclasse va considerata come una istanza della superclasse.
+
+### **Polimorfismo**
+Il **polimorfismo** è la capacità di associare a un’unica operazione o metodo **diverse implementazioni**, a seconda del **tipo dell’oggetto** o dei **parametri** su cui agisce.  
+Consente di scrivere codice più flessibile e riutilizzabile, in cui le stesse istruzioni possono operare su oggetti di tipi differenti.
+
+Il polimorfismo può essere classificato in diversi modi:
+- **polimorfismo parametrico**: si ha **polimorfismo parametrico** quando una funzione o classe lavora in modo uniforme su più tipi di dati, purché questi rispettino una struttura comune. È tipico delle funzioni o classi **template** in C++ o **generiche** in Java.
+
+- **polimorfismo per inclusione**: Si ha **polimorfismo per inclusione** quando un oggetto di una sottoclasse può essere usato ovunque sia previsto un oggetto della superclasse. (*principio di sostituibilita' di Liskov*).
+	- Il **binding** (o _legame_) indica il momento in cui viene stabilito **quale implementazione** di un metodo sarà eseguita.
+		- **Binding statico** → avviene **a compile-time**: L’associazione tra nome del metodo e implementazione è determinata dal **tipo statico** (dichiarato) dell’oggetto.
+		- **Binding dinamico** → avviene **a run-time**: L’associazione dipende dal **tipo reale dell’oggetto** (cioè dalla classe effettiva dell’istanza).
+		
+	- Il **binding dinamico** è ciò che rende possibile il polimorfismo di inclusione: il metodo corretto viene scelto al momento dell’esecuzione, in base alla classe concreta dell’oggetto.
+
+- **polimorfismo ad hoc**: si ha **polimorfismo ad hoc** quando una funzione o metodo lavora su tipi diversi, ma in modi potenzialmente non correlati. Si suddivide in due forme principali:
+	- **overloading**: Si usa lo stesso nome per più mePtodi che differiscono per tipo o numero di parametri. La scelta del metodo corretto avviene **a compile-time**.
+	- **coercizione**: È un meccanismo che converte automaticamente un tipo in un altro compatibile per applicare un’operazione.
