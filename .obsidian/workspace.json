@@ -11,14 +11,12 @@
             "id": "b578c5caccf14854",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Appunti/Metodi per il Ritrovamento dell'Informazione/💠 2 - Intelligent Information Retrieval/Information Retrieval.md",
-                "mode": "source",
-                "source": false
+                "file": "Archivio/immagini/Pasted image 20251028105519.png"
               },
-              "icon": "lucide-file",
-              "title": "Information Retrieval"
+              "icon": "lucide-image",
+              "title": "Pasted image 20251028105519"
             }
           }
         ]
@@ -78,8 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "11d4287befb9fcba",
@@ -182,19 +179,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b578c5caccf14854",
+  "active": "cd33f40c14a11b3b",
   "lastOpenFiles": [
+    "Appunti/Metodi per il Ritrovamento dell'Informazione/💠 2 - Intelligent Information Retrieval/Information Retrieval.md",
+    "Archivio/immagini",
     "Appunti/Metodi Avanzati di Programmazione/Il Paradigma Orientato agli Oggetti.md",
-    "Pasted image 20251028111944.png",
-    "Pasted image 20251028111924.png",
-    "Pasted image 20251028110806.png",
-    "Screenshot 2025-10-28 110624.png",
-    "Pasted image 20251028110658.png",
-    "Pasted image 20251028110610.png",
-    "Pasted image 20251028105645.png",
-    "Pasted image 20251028105611.png",
-    "Pasted image 20251028105603.png",
-    "Pasted image 20251028105539.png",
+    "Archivio/immagini/Pasted image 20251028111944.png",
+    "Archivio/immagini/Pasted image 20251028111924.png",
+    "Archivio/immagini/Pasted image 20251028110806.png",
+    "Archivio/immagini/Screenshot 2025-10-28 110624.png",
+    "Archivio/immagini/Pasted image 20251028110658.png",
+    "Archivio/immagini/Pasted image 20251028110610.png",
+    "Archivio/immagini/Pasted image 20251028105645.png",
+    "Archivio/immagini/Pasted image 20251028105611.png",
+    "Archivio/immagini/Pasted image 20251028105603.png",
+    "Archivio/immagini/Pasted image 20251028105539.png",
     "Appunti/Metodi Avanzati di Programmazione/Piano di Studio MAP.md",
     "Appunti/Metodi Avanzati di Programmazione/Astrazione nella Programmazione/Astrazione nella Programmazione.md",
     "conflict-files-obsidian-git.md",
@@ -214,7 +213,6 @@
     "Appunti/Metodi Avanzati di Programmazione/2. Astrazione nella programmazione.md",
     "Appunti/Calcolabilita e Complessita/1. Automi Finiti.md",
     "Appunti/Reti di Calcolatori/🖥️ 3 - Architetture Parallele/Architetture Parallele.md",
-    "Appunti/Metodi per il Ritrovamento dell'Informazione/💠 2 - Intelligent Information Retrieval/Information Retrieval.md",
     "Appunti/Reti di Calcolatori/🖥️ 3 - Architetture Parallele",
     "Appunti/Reti di Calcolatori/La linea di Comandi di Windows.md",
     "Appunti/Reti di Calcolatori/⚙️ 2 - Architettura protocollare/Modello TCP-IP.md",
@@ -228,7 +226,6 @@
     "Appunti/Metodi per il Ritrovamento dell'Informazione/⚪ 1 - Introduzione",
     "immagini/reti",
     "immagini",
-    "Appunti/Reti di Calcolatori/⚙️ 2 - Architettura protocollare",
     "TODO.canvas",
     "Senza nome.canvas"
   ]
