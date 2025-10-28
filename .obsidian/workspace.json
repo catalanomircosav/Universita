@@ -11,12 +11,14 @@
             "id": "b578c5caccf14854",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Archivio/immagini/Pasted image 20251028105519.png"
+                "file": "Appunti/Metodi Avanzati di Programmazione/Il Paradigma Orientato agli Oggetti.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20251028105519"
+              "icon": "lucide-file",
+              "title": "Il Paradigma Orientato agli Oggetti"
             }
           }
         ]
@@ -76,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "11d4287befb9fcba",
@@ -179,11 +182,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cd33f40c14a11b3b",
+  "active": "b578c5caccf14854",
   "lastOpenFiles": [
+    "Appunti/Metodi Avanzati di Programmazione/Il Paradigma Orientato agli Oggetti.md",
+    "Senza nome 1.md",
+    "Senza nome.md",
+    "Appunti/Metodi Avanzati di Programmazione/Piano di Studio MAP.md",
+    "Archivio/immagini/Pasted image 20251028105519.png",
     "Appunti/Metodi per il Ritrovamento dell'Informazione/💠 2 - Intelligent Information Retrieval/Information Retrieval.md",
     "Archivio/immagini",
-    "Appunti/Metodi Avanzati di Programmazione/Il Paradigma Orientato agli Oggetti.md",
     "Archivio/immagini/Pasted image 20251028111944.png",
     "Archivio/immagini/Pasted image 20251028111924.png",
     "Archivio/immagini/Pasted image 20251028110806.png",
@@ -193,8 +200,6 @@
     "Archivio/immagini/Pasted image 20251028105645.png",
     "Archivio/immagini/Pasted image 20251028105611.png",
     "Archivio/immagini/Pasted image 20251028105603.png",
-    "Archivio/immagini/Pasted image 20251028105539.png",
-    "Appunti/Metodi Avanzati di Programmazione/Piano di Studio MAP.md",
     "Appunti/Metodi Avanzati di Programmazione/Astrazione nella Programmazione/Astrazione nella Programmazione.md",
     "conflict-files-obsidian-git.md",
     "Appunti/Metodi Avanzati di Programmazione/Progettazione/Astrazione nella Progettazione.md",
@@ -217,7 +222,6 @@
     "Appunti/Reti di Calcolatori/La linea di Comandi di Windows.md",
     "Appunti/Reti di Calcolatori/⚙️ 2 - Architettura protocollare/Modello TCP-IP.md",
     "Appunti/Reti di Calcolatori/Glossario.md",
-    "Senza nome.md",
     "Appunti/Metodi per il Ritrovamento dell'Informazione/⚪ 1 - Introduzione/1 - Introduzione.md",
     "Appunti/Metodi per il Ritrovamento dell'Informazione/Proprieta' dei Logaritmi.md",
     "Appunti/Metodi per il Ritrovamento dell'Informazione/Senza nome",
