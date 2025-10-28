@@ -73,31 +73,56 @@ Gli attributi e i metodi di una classe possono avere diversi livelli di visibili
 
 `+` **public**, `#` **protected**, `-` **private**, `~` **package**.  
 Usala per comunicare **contratti** e **incapsulamento**, non per ribadire tutto il design del linguaggio. Mantieni il diagramma focalizzato su cosa è **pubblico** per i clienti della classe.
-
+![[Pasted image 20251028105645.png]]
 **Molteplicità**:
 - **di classe**: quante istanze possono esistere (es. `1` per un **Singleton**; utile per vincoli architetturali).
+![[Pasted image 20251028105603.png]]
 - **di attributo**: quante istanze di un tipo collego a un oggetto (es. `porte[2..*]:Port`).  
     Ricordati che indicare la molteplicità negli attributi chiarisce subito **cardinalità e collezioni** senza dover introdurre per forza un’associazione separata.
-
+![[Pasted image 20251028105611.png]]
 **Proprietà degli attributi** (quando serve rigore): `changeable` (*senza restrizioni*), `addOnly` (*valori che non possono essere rimossi*), `frozen` (*valore non modificabili)*. Sono preziose per vincoli d’invarianza (es. ID immutabili).
-
+### **Operazioni “con proprietà” e classi attive**
+Nei sistemi concorrenti compaiono le **classi attive** (bordo raddoppiato): le loro istanze hanno **thread** proprio. Usale solo quando la **concorrenza** è parte dell’astrazione del dominio.
+![[Pasted image 20251028105539.png]]
+### **Classe Template**
+Una **classe template** definisce una famiglia di classi parametrizzate per tipo (in Java: **generics**). In UML indichi il **parametro di tipo** (es. `ArrayList<E>`).
+![[Pasted image 20251028105519.png]]
 ## 5. Ereditarietà
-- Relazione fra classi per riuso e specializzazione.  
-- Forme di ereditarietà:
-  - **Per estensione:** aggiunge nuovi attributi/metodi.  
-  - **Per variazione funzionale:** ridefinisce metodi (overriding).  
-  - **Di implementazione:** riuso del codice, non compatibile col polimorfismo.  
-- Ereditarietà singola e multipla: vantaggi e conflitti.  
-- Principio di sostituibilità (Liskov).  
-- Proprietà della generalizzazione (transitività, antisimmetria).  
-- Classi astratte, finali e polimorfiche.
+L’**ereditarietà** è una relazione tra classi che permette di definire una nuova classe (“sottoclasse”) a partire da un’altra (“superclasse”), **riusando** struttura e comportamento e **specializzandoli** dove serve:
+- **Ereditarietà per estensione**: La sottoclasse **aggiunge** attributi e/o metodi non presenti nella superclasse. La visibilità degli elementi ereditati **non cambia** (public/protected/private restano tali).
+![[Pasted image 20251028110610.png]]
+- **Ereditarietà per variazione funzionale**: La sottoclasse **ridefinisce** (override) l’implementazione di un metodo, a **segnatura invariata**. Attenzione: l’override **non è incrementale** — se cambi la regola nella superclasse, **non** si propaga automaticamente alle override; devi aggiornare anche le sottoclassi, altrimenti introduci discrepanze.
+![[Screenshot 2025-10-28 110624.png]]
+- **Ereditarietà di implementazione***: La sottoclasse **riutilizza il codice** (rappresentazione e metodi) della superclasse per realizzare **un’altra astrazione** con **interfaccia diversa**. Qui si può anche **modificare la visibilità** degli elementi ereditati. **Non** rispetta Liskov/sostituibilità.
+![[Pasted image 20251028110806.png]]
+
+#### **Sostituibilità (Liskov) e relazione “is-a”**: 
+Il **principio di sostituibilità** (LSP) dice: se un punto del codice vuole un `X`, deve poter ricevere **qualsiasi** istanza di una **sottoclasse di X** senza rompere il comportamento atteso.
+
+### **Struttura della gerarchia: proprietà e risoluzione dei metodi**
+
+- **Proprietà del grafo di ereditarietà**
+Le generalizzazioni tra classi formano un **DAG** (grafo orientato aciclico), **transitivo** e **antisimmetrico**: puoi risalire ai **progenitori** (superclassi) o scendere verso i **discendenti** (sottoclassi). Ogni classe ha il proprio grafo di ereditarietà `G(C)` focalizzato sulle sue superclassi.
+
+- **Ereditarietà singola — risoluzione dell’override**
+Con una sola superclasse diretta, la risoluzione del metodo è lineare: si considera la **catena** delle superclassi e si prende la **prima** (procedendo dalla sottoclasse verso l’alto) che **definisce/ridefinisce** il metodo. Questo chiarisce quale codice verrà eseguito in caso di overriding.
+
+- **Ereditarietà multipla — cosa succede e perché è difficile**
+Con più superclassi dirette, `G(C)` **non è più un albero**. Due problemi tipici:
+
+1. **Conflitto di metodi** con lo stesso nome: una linearizzazione dell’ordine (più d’una possibile) decide da quale superclasse “vince” l’implementazione (quella **più specifica** nella linearizzazione scelta).
+
+2. **Ambiguità reali**: quando la linearizzazione non basta a decidere, servono **criteri euristici**, ad esempio:
+    - **Ordine dichiarativo** delle superclassi (la molteplicità di ereditarietà),
+    - **Modularità**: evitare di mescolare sottografi concettualmente separati (diversi “punti di vista” sullo stesso oggetto).  
+        Queste difficoltà spiegano perché molti sconsigliano l’ereditarietà multipla per le classi concrete: i **benefici sono pochi** rispetto alla complessità semantica che introduce.
+
 
 ## 6. Interfacce
-- Descrizione del comportamento di una classe senza implementazione.  
-- Relazione di realizzazione tra classe e interfaccia.  
-- Ereditarietà fra interfacce e implementazioni multiple.  
-- Interfacce come strumento di disaccoppiamento (contratto “cosa vs come”).
-
+Un’**interfaccia** specifica **quali operazioni** un tipo espone, non **come** le realizza. A differenza di una classe, in UML l’interfaccia non definisce stato (se non eventuali costanti statiche) e non fornisce implementazioni; è concettualmente simile a una **classe astratta con soli metodi astratti**.
+![[Pasted image 20251028111924.png]]
+La relazione tra **classe** e **interfaccia** è la **realizzazione** (freccia tratteggiata): l’interfaccia esprime **il contratto** (_cosa_), la classe fornisce **l’implementazione** (_come_)
+![[Pasted image 20251028111944.png]]
 ## 7. Aggregazione e Composizione
 - **Aggregazione:** relazione “has_a” debole tra oggetti (le parti possono esistere senza l’intero).  
 - **Composizione:** relazione forte (dipendenza esistenziale).  
