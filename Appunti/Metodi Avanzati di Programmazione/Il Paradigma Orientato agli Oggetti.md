@@ -10,7 +10,7 @@ Una classe è composta da:
 ### **Oggetti**
 Un oggetto e' una istanza di una classe. Esso e' dotato di tutti gli attributi e metodi definiti dalla classe e agisce come un *fornitore* di "*messaggi*", che il codice eseguibile del programma può attivare su richiesta. Inviare un messaggio significa invocare un metodo su quell'oggetto.
 Ogni oggetto ha una sua **identità**, rappresentata da un **identificatore di oggetto (*OID*)**, che lo identifica univocamente e nella maggior parte dei casi e' rappresentato dal primo indirizzo di memoria su cui risiede l'oggetto.
-![](../../resources/map/uml/UML%20-%20Istanza.png)
+![gay](../../resources/map/uml/UML%20-%20Istanza.png)
 ### **Attributi**
 Gli **attributi** si distinguono in base al loro *scope* (ambito d'azione):
 - **attributi d'istanza**: sono associati a un oggetto e hanno vita pari a quella dell'oggetto;
