@@ -39,6 +39,7 @@ Con il termine ***molteplicità di classe*** si intende il numero di oggetti che
 - **classi singleton (*singoletto*)**: classi con molteplicità `1`, ovvero classi che non permettono di avere più di un oggetto istanziato.
 - **classi con molteplicità $n$**: classi che possono avere esattamente $n$ oggetti contemporaneamente.
 ![](../../resources/map/UML/UML%20-%20Molteplicita'.png)
+
 Con il termine di **molteplicità di attributo** si indica il numero massimo di attributi di un determinato tipo che una classe può avere.
 ![](../../resources/map/UML/UML%20-%20Molteplicita%20di%20attributi.png)
 ### **Classi attive**
