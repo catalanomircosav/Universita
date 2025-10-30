@@ -1,4 +1,4 @@
-# **Cosa e' il Paradigma Orientato agli Oggetti**
+# **Cosa è il Paradigma Orientato agli Oggetti**
 Il paradigma orientato agli oggetti è un paradigma che permette di definire **oggetti** in grado di interagire gli uni con gli altri attraverso lo scambio di messaggi (*per scambio di messaggi si intende la capacità degli oggetti di richiamare **metodi** pubblici di altri oggetti*).
 ## **Classi**
 Una **classe** permette di definire tipi di dati e permettono la creazione di **oggetti** secondo caratteristiche definite nella classe stessa, che quindi saranno comuni a tutti gli oggetti di quella classe. Grazie poi alle relazioni di ereditarietà, è possibile creare **sotto-classi** a partire da quelle esistenti, estendendole con caratteristiche aggiuntive.
@@ -6,6 +6,7 @@ Una **classe** permette di definire tipi di dati e permettono la creazione di **
 Una classe è composta da:
 - un insieme di **attributi**, ossia *variabili*/*costanti* che definiscono le caratteristiche degli oggetti di quella classe.
 - un insieme di **metodi**, ossia *procedure* che operano sugli attributi.
+
 ![](../../resources/map/UML/UML%20-%20Classe.png)
 ### **Oggetti**
 Un oggetto e' una istanza di una classe. Esso e' dotato di tutti gli attributi e metodi definiti dalla classe e agisce come un *fornitore* di "*messaggi*", che il codice eseguibile del programma può attivare su richiesta. Inviare un messaggio significa invocare un metodo su quell'oggetto.
@@ -16,6 +17,7 @@ Ogni oggetto ha una sua **identità**, rappresentata da un **identificatore di o
 Gli **attributi** si distinguono in base al loro *scope* (ambito d'azione):
 - **attributi d'istanza**: sono associati a un oggetto e hanno vita pari a quella dell'oggetto;
 - **attributi di classe**: sono associati alla classe e condivisi tra tutti gli oggetti di quella classe.
+
 ![](../../resources/map/UML/UML%20-%20Attributo.png)
 ### **Metodi**
 Anche i metodi si distinguono in base al loro scope:
@@ -27,6 +29,7 @@ I **metodi** possono essere ulteriormente classificati in:
 - **metodi di accesso**: restituiscono gli attributi dell'oggetto in forma di informazione.
 - **metodi di trasformazione**: modificano gli attributi dell'oggetto.
 - **metodi distruttori**: invocati per distruggere (e quindi *rimuovere dalla memoria*) un oggetto.
+
 ![](../../resources/map/UML/UML%20-%20Metodi.png)
 ### **Visibilità e Molteplicità'**
 Gli attributi e i metodi di una classe possono avere diversi livelli di visibilità:
@@ -50,9 +53,11 @@ Una classe si attiva quando gli oggetti di quella classe sono attivi. Un oggetto
 ![](../../resources/map/UML/UML%20-%20Classe%20Attiva.png)
 ### **Classi template**
 Una classe template definisce una **famiglia di classi parametrizzate**. Una classe di questo tipo non è utilizzabile direttamente, ma va prima specificato il tipo. (`generic` in **Java**)
+
 ![](../../resources/map/UML/UML%20-%20Classe%20Template.png)
 ### **Classi astratte**
 Una classe astratta e' una classe non completamente specificata, vale a dire che almeno un metodo di quella classe non ha specificato l'implementazione, ma solo la firma. Per questo motivo, una classe astratta non può essere istanziata.
+
 ![](../../resources/map/UML/UML%20-%20Classe%20Astratta.png)
 #### **Interfacce**
 Una interfaccia è la descrizione del comportamento degli oggetti senza specificare alcuna implementazione. E' una collezione di operazioni, ovvero di servizi che possono essere richiesti.
@@ -67,6 +72,7 @@ Infine, più classi possono implementare la stessa interfaccia.
 ![](../../resources/map/UML/UML%20-%20Interfaccia.png)
 ### **Classi finali**
 Una classe finale è una classe che non può essere ulteriormente specializzata. Si definisce una classe di questo tipo quando il comportamento della classe stessa deve essere ben stabilito per ragioni di **affidabilità**.
+
 ![](../../resources/map/UML/UML%20-%20Classe%20Finale.png)
 ### **Classi interne**
 Una classe interna è una classe la cui dichiarazione si trova all'interno di un'altra classe ospite.
@@ -85,9 +91,15 @@ Il meccanismo dell'ereditarietà permette di definire una nuova classe (_sottocl
 Il meccanismo si può suddividere in tre tipi:
 - **ereditarietà per estensione**: la sottoclasse aggiunge nuovi attributi e metodi, ereditando tutti quelli della superclasse. _Questo meccanismo è compatibile con il principio di sostituibilità di Liskov_.
 
-- **ereditarietà per variazione funzionale**: la sottoclasse ridefinisce (effettua l'_overriding_) di alcuni metodi ereditati dalla superclasse. _Anche questo tipo è compatibile con il principio di sostituibilità di Liskov._
+  ![](../../resources/map/UML/UML%20-%20Generalizzazione.png)
+
+- **ereditarietà per variazione funzionale**: la sottoclasse ridefinisce (effettua l'_overriding_) di alcuni metodi ereditati dalla superclasse. _Anche questo tipo è compatibile con il principio di sostituibilità di Liskov.
+
+  ![](../../resources/map/UML/UML%20-%20Ereditarieta'%20funzionale.png)
 
 - **ereditarietà per implementazione**: la sottoclasse riutilizza l'implementazione della superclasse ma non ne condivide l'interfaccia pubblica. _Permettendo quindi un **riuso** solo **parziale** del codice questo terzo tipo non è compatibile con il principio di sostituibilità di Liskov._
+
+  ![](../../resources/map/UML/UML%20-%20implementation%20Inheritance.png)
 
 Inoltre, anche l'ereditarietà permette di definire una molteplicità:
 - **ereditarietà singola**: Il grafo di ereditarietà è in realtà un albero in cui ogni classe ha una sola superclasse diretta.
@@ -95,6 +107,8 @@ Inoltre, anche l'ereditarietà permette di definire una molteplicità:
 
 - **ereditarietà multipla**: Il grafo di ereditarietà non è più un albero ma un grafo aciclico orientato.
     - In caso di ereditarietà multipla, se più superclassi definiscono lo stesso metodo, si sceglie la versione della **classe più vicina** nella linearizzazione del grafo. **Tutte le altre versioni vengono ignorate (shadowing).**
+    
+      ![](../../resources/map/UML/UML%20-%20Ereditarieta'%20Multipla.png)
 
 La relazione di ereditarietà corrisponde a una relazione di **generalizzazione tra classi (_is_a_)**. Ciò perché ogni istanza della sottoclasse va considerata come una istanza della superclasse.
 
@@ -118,3 +132,57 @@ Il polimorfismo può essere classificato in diversi modi:
     
     - **overloading**: Si usa lo stesso nome per più metodi che differiscono per tipo o numero di parametri. La scelta del metodo corretto avviene **a compile-time**.
     - **coercizione**: È un meccanismo che converte automaticamente un tipo in un altro compatibile per applicare un’operazione.
+
+## **Relazioni UML**
+Nel paradigma orientato agli oggetti, le **relazioni** descrivono come le **classi** e gli **oggetti** interagiscono e sono legati tra loro.
+### **Relazione `instance-of`**
+La relazione **`instance-of`** lega un **oggetto concreto** alla **classe di cui è istanza**.  
+In altre parole, afferma che:
+> “Questo oggetto è un’istanza di quella classe”.
+
+In UML può essere rappresentata in due modi:
+- **forma esplicita**: Lo stereotipo `<<instanceOf>>` viene utilizzato per indicare la relazione diretta tra oggetto e classe.
+- **forma abbreviata**: Il nome dell'oggetto è seguito dai due punti e dal nome della classe.
+
+Questa relazione è asimmetrica, poiché un oggetto è istanza di una classe, ma una classe non è istanza di un oggetto.
+### **Relazione `is_a`**
+La relazione `is_a` esprime un legame di generalizzazione fra due classi. Indica che una **sottoclasse** (_classe specializzata_) eredita attributi e comportamenti da una **superclasse** (_classe generalizzata_).
+> Se `B is_a A`, allora ogni istanza di `B` è anche un’istanza di `A`.
+
+In UML si rappresenta con una **freccia con triangolo vuoto** che punta verso la superclasse. (vedi sopra)
+
+**Caratteristiche principali**:
+- È una relazione **asimmetrica** e **transitiva**.
+- È alla base del **principio di sostituibilità di Liskov**, secondo cui una sottoclasse può essere utilizzata ovunque sia previsto un oggetto della superclasse.
+- Consente il **polimorfismo di inclusione**, in cui la stessa operazione può comportarsi in modo diverso a seconda della classe concreta dell’oggetto.
+### **Relazione `has_a`**
+La relazione **`has_a`** rappresenta un legame di **contenimento o appartenenza** fra due classi. Descrive un oggetto che è **composto da** o **contiene** altri oggetti.
+> Se `A has_a B`, significa che un oggetto di tipo `A` contiene o utilizza uno o più oggetti di tipo `B`.
+
+Questo tipo di relazione si suddivide in due categorie:
+
+- **aggregazione**: È una relazione **debole di contenimento** (_“parte-tutto”_), in cui le parti **possono esistere indipendentemente** dall’intero.
+  In UML si rappresenta con una **linea piena** e un **rombo bianco** dal lato del contenitore.
+	- **Caratteristiche**:
+		- Le parti hanno **vita propria**.
+		- La relazione indica un **collegamento logico o funzionale**, non necessariamente fisico.
+		- Si usa per esprimere un legame del tipo “contiene” o “utilizza”.
+
+	![](../../resources/map/UML/UML%20-%20Aggregazione.png)
+
+- **composizione**: È una relazione **forte di contenimento**, in cui le parti **non possono esistere senza l’intero**: la loro vita dipende da quella del contenitore.
+  In UML si rappresenta con un **rombo nero** (pieno) accanto al contenitore.
+	- **Caratteristiche**:
+		- Le parti vengono **create e distrutte insieme** all’intero.
+		- Non è ammessa la **condivisione**: un oggetto componente può appartenere a un solo contenitore.
+		- Si usa per rappresentare una **dipendenza esistenziale**.
+
+	![](../../resources/map/UML/UML%20-%20Composizione.png)
+
+|Caratteristica|`is_a` (Generalizzazione)|`has_a` (Aggregazione / Composizione)|
+|---|---|---|
+|Tipo di relazione|Ereditarietà (specializzazione)|Contenimento (parte–tutto)|
+|Direzione|Dalla sottoclasse alla superclasse|Dal contenitore alla parte|
+|Dipendenza|La sottoclasse dipende dalla superclasse solo concettualmente|Nella composizione, la parte dipende dall’intero anche fisicamente|
+|Polimorfismo|Permesso (principio di sostituibilità)|Non applicabile|
+|Esempio|`Studente is_a Persona`|`Automobile has_a Motore`|
