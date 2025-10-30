@@ -11,12 +11,14 @@
             "id": "b578c5caccf14854",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "resources/map/UML/UML - Attributo.png"
+                "file": "Appunti/Metodi Avanzati di Programmazione/Il Paradigma Orientato agli Oggetti.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "UML - Attributo"
+              "icon": "lucide-file",
+              "title": "Il Paradigma Orientato agli Oggetti"
             }
           }
         ]
@@ -76,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "11d4287befb9fcba",
@@ -179,8 +182,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cd33f40c14a11b3b",
+  "active": "b578c5caccf14854",
   "lastOpenFiles": [
+    "resources/map/UML/UML - Attributo.png",
     "resources/map/UML/UML - Classe Interna.png",
     "resources/map/UML",
     "resources/map",
@@ -192,7 +196,6 @@
     "resources/map/UML/UML - Molteplicita di attributi.png",
     "resources/map/UML/UML - Molteplicita'.png",
     "resources/map/UML/UML - Metodi.png",
-    "resources/map/UML/UML - Attributo.png",
     "resources/map/UML/UML - Istanza.png",
     "Appunti/Metodi Avanzati di Programmazione/Il Paradigma Orientato agli Oggetti.md",
     "resources",

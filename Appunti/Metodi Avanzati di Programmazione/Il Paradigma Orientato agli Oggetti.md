@@ -1,5 +1,3 @@
-#map 
-___
 # **Cosa e' il Paradigma Orientato agli Oggetti**
 Il paradigma orientato agli oggetti è un paradigma che permette di definire **oggetti** in grado di interagire gli uni con gli altri attraverso lo scambio di messaggi (*per scambio di messaggi si intende la capacità degli oggetti di richiamare **metodi** pubblici di altri oggetti*).
 ## **Classi**
@@ -8,16 +6,16 @@ Una **classe** permette di definire tipi di dati e permettono la creazione di **
 Una classe è composta da:
 - un insieme di **attributi**, ossia *variabili*/*costanti* che definiscono le caratteristiche degli oggetti di quella classe.
 - un insieme di **metodi**, ossia *procedure* che operano sugli attributi.
-![[UML - Classe.png]]
+![](../../resources/map/uml/UML%20-%20Classe.png)
 ### **Oggetti**
 Un oggetto e' una istanza di una classe. Esso e' dotato di tutti gli attributi e metodi definiti dalla classe e agisce come un *fornitore* di "*messaggi*", che il codice eseguibile del programma può attivare su richiesta. Inviare un messaggio significa invocare un metodo su quell'oggetto.
 Ogni oggetto ha una sua **identità**, rappresentata da un **identificatore di oggetto (*OID*)**, che lo identifica univocamente e nella maggior parte dei casi e' rappresentato dal primo indirizzo di memoria su cui risiede l'oggetto.
-![[UML - Istanza.png]]
+![](../../resources/map/uml/UML%20-%20Istanza.png)
 ### **Attributi**
 Gli **attributi** si distinguono in base al loro *scope* (ambito d'azione):
 - **attributi d'istanza**: sono associati a un oggetto e hanno vita pari a quella dell'oggetto;
 - **attributi di classe**: sono associati alla classe e condivisi tra tutti gli oggetti di quella classe.
-![[UML - Attributo.png]]
+![](../../resources/map/uml/UML%20-%20Attributo.png)
 ### **Metodi**
 Anche i metodi si distinguono in base al loro scope:
 - **metodi di istanza**: operano su un attributo dell'oggetto, pertanto devono essere invocati solo specificando l'oggetto.
@@ -28,7 +26,7 @@ I **metodi** possono essere ulteriormente classificati in:
 - **metodi di accesso**: restituiscono gli attributi dell'oggetto in forma di informazione.
 - **metodi di trasformazione**: modificano gli attributi dell'oggetto.
 - **metodi distruttori**: invocati per distruggere (e quindi *rimuovere dalla memoria*) un oggetto.
-![[UML - Metodi.png]]
+![](../../resources/map/uml/UML%20-%20Metodi.png)
 ### **Visibilità e Molteplicità'**
 Gli attributi e i metodi di una classe possono avere diversi livelli di visibilità:
 - **attributo / metodo pubblico** (`+`): quando può essere **visto** (*utilizzato, invocato, modificato, ecc.*) anche da altre classi;
@@ -39,18 +37,18 @@ Gli attributi e i metodi di una classe possono avere diversi livelli di visibili
 Con il termine ***molteplicità di classe*** si intende il numero di oggetti che possono essere del tipo di classe. Generalmente non vi è imposto un limite, tuttavia si possono distinguere:
 - **classi singleton (*singoletto*)**: classi con molteplicità `1`, ovvero classi che non permettono di avere più di un oggetto istanziato.
 - **classi con molteplicità $n$**: classi che possono avere esattamente $n$ oggetti contemporaneamente.
-![[UML - Molteplicita'.png]]
+![](../../resources/map/uml/UML%20-%20Molteplicita'.png)
 Con il termine di **molteplicità di attributo** si indica il numero massimo di attributi di un determinato tipo che una classe può avere.
-![[UML - Molteplicita di attributi.png]]
+![](../../resources/map/uml/UML%20-%20Molteplicita%20di%20attributi.png)
 ### **Classi attive**
 Una classe si attiva quando gli oggetti di quella classe sono attivi. Un oggetto si dice **attivo** quando esso ha un thread e può far partire un thread concorrente. Una classe attiva è simile ad una classe classica con l'eccezione che le sue istanze rappresentano elementi il cui comportamento e' concorrente con gli altri.
-![[UML - Classe Attiva.png]]
+![](../../resources/map/uml/UML%20-%20Classe%20Attiva.png)
 ### **Classi template**
 Una classe template definisce una **famiglia di classi parametrizzate**. Una classe di questo tipo non e' utilizzabile direttamente, ma va prima specificato il tipo. (`generic` in **Java**)
-![[UML - Classe Template.png]]
+![](../../resources/map/uml/UML%20-%20Classe%20Template.png)
 ### **Classi astratte**
 Una classe astratta e' una classe non completamente specificata, vale a dire che almeno un metodo di quella classe non ha specificato l'implementazione, ma solo la firma. Per questo motivo, una classe astratta non può essere istanziata.
-![[UML - Classe Astratta.png]]
+![](../../resources/map/uml/UML%20-%20Classe%20Astratta.png)
 #### **Interfacce**
 Una interfaccia è la descrizione del comportamento degli oggetti senza specificare alcuna implementazione. E' una collezione di operazioni, ovvero di servizi che possono essere richiesti.
 - Similmente ad una classe, può avere un numero qualsiasi di operazioni;
@@ -61,54 +59,56 @@ Una interfaccia è la descrizione del comportamento degli oggetti senza specific
 Poiché non possono sorgere conflitti tra interfacce, a una classe è permesso di realizzare più interfacce.
 Infine, più classi possono implementare la stessa interfaccia.
 
-![[UML - Interfaccia.png]]
+![](../../resources/map/uml/UML%20-%20Interfaccia.png)
 ### **Classi finali**
 Una classe finale è una classe che non può essere ulteriormente specializzata. Si definisce una classe di questo tipo quando il comportamento della classe stessa deve essere ben stabilito per ragioni di **affidabilità**.
-![[UML - Classe Finale.png]]
+![](../../resources/map/uml/UML%20-%20Classe%20Finale.png)
 ### **Classi interne**
 Una classe interna è una classe la cui dichiarazione si trova all'interno di un'altra classe ospite.
 - Una classe di questo tipo non può essere privata.
 - Può accedere a tutti i metodi e i campi della classe ospitante, mentre la classe ospitante può vedere solo la parte pubblica della *inner class*.
 - Un oggetto di una classe inner non può esistere se non esiste un oggetto della classe ospitante. 
 - Non può avere campi statici.
-![[UML - Classe Interna.png]]
-____
-### **Ereditarietà**
-Il meccanismo dell'ereditarietà permette di definire una nuova classe (*sottoclasse*) a partire da una classe esistente (*superclasse*), ereditandone attributi e metodi.
-Permette di riutilizzare il codice e specializzare comportamenti.
+![](../../resources/map/uml/UML%20-%20Classe%20Interna.png)
 
-- **Principio di sostituibilita' di Liskov**
-	Il principio di sostituibilità di Liskov stabilisce che un tipo `S` è un sottotipo di `T` quando è possibile sostituire tutti gli oggetti di `T` con gli oggetti di `S`, mantenendo intatto il funzionamento del programma. 
+### **Ereditarietà**
+Il meccanismo dell'ereditarietà permette di definire una nuova classe (_sottoclasse_) a partire da una classe esistente (_superclasse_), ereditandone attributi e metodi. Permette di riutilizzare il codice e specializzare comportamenti.
+
+- **Principio di sostituibilità di Liskov** Il principio di sostituibilità di Liskov stabilisce che un tipo `S` è un sottotipo di `T` quando è possibile sostituire tutti gli oggetti di `T` con gli oggetti di `S`, mantenendo intatto il funzionamento del programma.
 
 Il meccanismo si può suddividere in tre tipi:
-- **ereditarietà per estensione**: la sottoclasse aggiunge nuovi attributi e metodi, ereditando tutti quelli della superclasse. *Questo meccanismo è compatibile con il principio di sostituibilità di Liskov.*
-- **ereditarietà per variazione funzionale**: la sottoclasse ridefinisce (effettua l'*overriding*) di alcuni metodi ereditati dalla superclasse. *Anche questo tipo è compatibile con il principio di sostituibilità di Liskov.*
-- **ereditarietà per implementazione**: la sottoclasse riutilizza l'implementazione della superclasse ma non ne condivide l'interfaccia pubblica. *Permettendo quindi un **riuso** solo **parziale** del codice questo terzo tipo non è compatibile con il principio di sostituibilità di Liskov.*
+- **ereditarietà per estensione**: la sottoclasse aggiunge nuovi attributi e metodi, ereditando tutti quelli della superclasse. _Questo meccanismo è compatibile con il principio di sostituibilità di Liskov_.
+
+- **ereditarietà per variazione funzionale**: la sottoclasse ridefinisce (effettua l'_overriding_) di alcuni metodi ereditati dalla superclasse. _Anche questo tipo è compatibile con il principio di sostituibilità di Liskov._
+
+- **ereditarietà per implementazione**: la sottoclasse riutilizza l'implementazione della superclasse ma non ne condivide l'interfaccia pubblica. _Permettendo quindi un **riuso** solo **parziale** del codice questo terzo tipo non è compatibile con il principio di sostituibilità di Liskov._
 
 Inoltre, anche l'ereditarietà permette di definire una molteplicità:
 - **ereditarietà singola**: Il grafo di ereditarietà è in realtà un albero in cui ogni classe ha una sola superclasse diretta.
-	- Quando una classe eredita un metodo da più livelli di superclassi, **la versione più vicina** (cioè quella definita nella prima superclasse che la ridefinisce) è quella effettivamente ereditata.
+    - Quando una classe eredita un metodo da più livelli di superclassi, **la versione più vicina** (cioè quella definita nella prima superclasse che la ridefinisce) è quella effettivamente ereditata.
 
 - **ereditarietà multipla**: Il grafo di ereditarietà non è più un albero ma un grafo aciclico orientato.
-	- In caso di ereditarietà multipla, se più superclassi definiscono lo stesso metodo,   si sceglie la versione della **classe più vicina** nella linearizzazione del grafo. **Tutte le altre versioni vengono ignorate (shadowing).**
+    - In caso di ereditarietà multipla, se più superclassi definiscono lo stesso metodo, si sceglie la versione della **classe più vicina** nella linearizzazione del grafo. **Tutte le altre versioni vengono ignorate (shadowing).**
 
-La relazione di ereditarietà corrisponde a una relazione di **generalizzazione tra classi (*is_a*)**. Ciò perché ogni istanza della sottoclasse va considerata come una istanza della superclasse.
+La relazione di ereditarietà corrisponde a una relazione di **generalizzazione tra classi (_is_a_)**. Ciò perché ogni istanza della sottoclasse va considerata come una istanza della superclasse.
 
 ### **Polimorfismo**
-Il **polimorfismo** è la capacità di associare a un’unica operazione o metodo **diverse implementazioni**, a seconda del **tipo dell’oggetto** o dei **parametri** su cui agisce.  
+Il **polimorfismo** è la capacità di associare a un’unica operazione o metodo **diverse implementazioni**, a seconda del **tipo dell’oggetto** o dei **parametri** su cui agisce.  
 Consente di scrivere codice più flessibile e riutilizzabile, in cui le stesse istruzioni possono operare su oggetti di tipi differenti.
 
 Il polimorfismo può essere classificato in diversi modi:
-- **polimorfismo parametrico**: si ha **polimorfismo parametrico** quando una funzione o classe lavora in modo uniforme su più tipi di dati, purché questi rispettino una struttura comune. È tipico delle funzioni o classi **template** in C++ o **generiche** in Java.
 
-- **polimorfismo per inclusione**: Si ha **polimorfismo per inclusione** quando un oggetto di una sottoclasse può essere usato ovunque sia previsto un oggetto della superclasse. (*principio di sostituibilità di Liskov*).
-	- Il **binding** (o _legame_) indica il momento in cui viene stabilito **quale implementazione** di un metodo sarà eseguita.
-		- **Binding statico** → avviene **a compile-time**: L’associazione tra nome del metodo e implementazione è determinata dal **tipo statico** (dichiarato) dell’oggetto.
-		- **Binding dinamico** → avviene **a run-time**: L’associazione dipende dal **tipo reale dell’oggetto** (cioè dalla classe effettiva dell’istanza).
-		
-	- Il **binding dinamico** è ciò che rende possibile il polimorfismo di inclusione: il metodo corretto viene scelto al momento dell’esecuzione, in base alla classe concreta dell’oggetto.
-
-- **polimorfismo ad hoc**: si ha **polimorfismo ad hoc** quando una funzione o metodo lavora su tipi diversi, ma in modi potenzialmente non correlati. Si suddivide in due forme principali:
-	- **overloading**: Si usa lo stesso nome per più metodi che differiscono per tipo o numero di parametri. La scelta del metodo corretto avviene **a compile-time**.
-	- **coercizione**: È un meccanismo che converte automaticamente un tipo in un altro compatibile per applicare un’operazione.
-
+- **polimorfismo parametrico**: si ha **polimorfismo parametrico** quando una funzione o classe lavora in modo uniforme su più tipi di dati, purché questi rispettino una struttura comune. È tipico delle funzioni o classi **template** in C++ o **generiche** in Java.
+    
+- **polimorfismo per inclusione**: Si ha **polimorfismo per inclusione** quando un oggetto di una sottoclasse può essere usato ovunque sia previsto un oggetto della superclasse. (_principio di sostituibilità di Liskov_).
+    
+    - Il **binding** (o _legame_) indica il momento in cui viene stabilito **quale implementazione** di un metodo sarà eseguita.
+        - **Binding statico** → avviene **a compile-time**: L’associazione tra nome del metodo e implementazione è determinata dal **tipo statico** (dichiarato) dell’oggetto.
+        - **Binding dinamico** → avviene **a run-time**: L’associazione dipende dal **tipo reale dell’oggetto** (cioè dalla classe effettiva dell’istanza).
+        
+    - Il **binding dinamico** è ciò che rende possibile il polimorfismo di inclusione: il metodo corretto viene scelto al momento dell’esecuzione, in base alla classe concreta dell’oggetto.
+        
+- **polimorfismo ad hoc**: si ha **polimorfismo ad hoc** quando una funzione o metodo lavora su tipi diversi, ma in modi potenzialmente non correlati. Si suddivide in due forme principali:
+    
+    - **overloading**: Si usa lo stesso nome per più metodi che differiscono per tipo o numero di parametri. La scelta del metodo corretto avviene **a compile-time**.
+    - **coercizione**: È un meccanismo che converte automaticamente un tipo in un altro compatibile per applicare un’operazione.
