@@ -35,8 +35,8 @@ I **metodi** possono essere ulteriormente classificati in:
 Gli attributi e i metodi di una classe possono avere diversi livelli di visibilità:
 - **attributo / metodo pubblico** (`+`): quando può essere **visto** (*utilizzato, invocato, modificato, ecc.*) anche da altre classi;
 - **attributo / metodo protetto** (`#`): quando può essere **visto** solo dalle sue **sotto-classi** e da classi visibili all'interno dello stesso ***package***.
-- **attributo / metodo package** (`-`): quando può essere visto solo agli elementi dello stesso ***package***.
-- **attributo / metodo privato** (`~`): quando non può essere visto all'esterno della classe.
+- **attributo / metodo package** (`~`): quando può essere visto solo agli elementi dello stesso ***package***.
+- **attributo / metodo privato** (`-`): quando non può essere visto all'esterno della classe.
 
 Con il termine ***molteplicità di classe*** si intende il numero di oggetti che possono essere del tipo di classe. Generalmente non vi è imposto un limite, tuttavia si possono distinguere:
 - **classi singleton (*singoletto*)**: classi con molteplicità `1`, ovvero classi che non permettono di avere più di un oggetto istanziato.
