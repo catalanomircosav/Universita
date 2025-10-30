@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti/Metodi Avanzati di Programmazione/📁 2 – Astrazione nella Programmazione/Astrazione nella Programmazione.md",
+                "file": "Appunti/Metodi Avanzati di Programmazione/3 – Paradigma OOP/Il Paradigma Orientato agli Oggetti.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Astrazione nella Programmazione"
+              "title": "Il Paradigma Orientato agli Oggetti"
             }
           }
         ]
@@ -183,9 +183,9 @@
   },
   "active": "cd33f40c14a11b3b",
   "lastOpenFiles": [
+    "Appunti/Metodi Avanzati di Programmazione/📁 2 – Astrazione nella Programmazione/Astrazione nella Programmazione.md",
     "Appunti/Metodi Avanzati di Programmazione/3 – Paradigma OOP/Il Paradigma Orientato agli Oggetti.md",
     "Appunti/Metodi Avanzati di Programmazione/📁 2 – Astrazione nella Programmazione/ADA.md",
-    "Appunti/Metodi Avanzati di Programmazione/📁 2 – Astrazione nella Programmazione/Astrazione nella Programmazione.md",
     "Appunti/Metodi Avanzati di Programmazione/📁 1 – Astrazione nella Progettazione/Astrazione nella Progettazione.md",
     "Appunti/Metodi Avanzati di Programmazione/3 – Paradigma OOP",
     "Appunti/Metodi Avanzati di Programmazione/Untitled.canvas",
@@ -196,7 +196,7 @@
     "resources/map/UML/UML - implementation Inheritance.png",
     "resources/map/UML/UML - Generalizzazione.png",
     "resources/map/UML/UML - instance_of_2.png",
-    "resources/map/UML/UML - instace_of.png",
+    "resources/map/UML/UML - instance_of.png",
     "resources/map/UML/UML - Attributo.png",
     "resources/map/UML/UML - Classe Interna.png",
     "resources/map/UML",
