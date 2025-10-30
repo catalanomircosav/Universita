@@ -10,6 +10,7 @@ Una classe è composta da:
 ### **Oggetti**
 Un oggetto e' una istanza di una classe. Esso e' dotato di tutti gli attributi e metodi definiti dalla classe e agisce come un *fornitore* di "*messaggi*", che il codice eseguibile del programma può attivare su richiesta. Inviare un messaggio significa invocare un metodo su quell'oggetto.
 Ogni oggetto ha una sua **identità**, rappresentata da un **identificatore di oggetto (*OID*)**, che lo identifica univocamente e nella maggior parte dei casi e' rappresentato dal primo indirizzo di memoria su cui risiede l'oggetto.
+
 ![gay](../../resources/map/UML/UML%20-%20Istanza.png)
 ### **Attributi**
 Gli **attributi** si distinguono in base al loro *scope* (ambito d'azione):
@@ -42,6 +43,7 @@ Con il termine di **molteplicità di attributo** si indica il numero massimo di 
 ![](../../resources/map/UML/UML%20-%20Molteplicita%20di%20attributi.png)
 ### **Classi attive**
 Una classe si attiva quando gli oggetti di quella classe sono attivi. Un oggetto si dice **attivo** quando esso ha un thread e può far partire un thread concorrente. Una classe attiva è simile ad una classe classica con l'eccezione che le sue istanze rappresentano elementi il cui comportamento è concorrente con gli altri.
+
 ![](../../resources/map/UML/UML%20-%20Classe%20Attiva.png)
 ### **Classi template**
 Una classe template definisce una **famiglia di classi parametrizzate**. Una classe di questo tipo non è utilizzabile direttamente, ma va prima specificato il tipo. (`generic` in **Java**)
@@ -69,6 +71,7 @@ Una classe interna è una classe la cui dichiarazione si trova all'interno di un
 - Può accedere a tutti i metodi e i campi della classe ospitante, mentre la classe ospitante può vedere solo la parte pubblica della *inner class*.
 - Un oggetto di una classe inner non può esistere se non esiste un oggetto della classe ospitante. 
 - Non può avere campi statici.
+
 ![](../../resources/map/UML/UML%20-%20Classe%20Interna.png)
 
 ### **Ereditarietà**
