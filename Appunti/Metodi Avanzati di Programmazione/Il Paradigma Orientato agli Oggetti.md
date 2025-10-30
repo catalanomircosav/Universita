@@ -93,7 +93,7 @@ Il meccanismo si può suddividere in tre tipi:
 
   ![](../../resources/map/UML/UML%20-%20Generalizzazione.png)
 
-- **ereditarietà per variazione funzionale**: la sottoclasse ridefinisce (effettua l'_overriding_) di alcuni metodi ereditati dalla superclasse. _Anche questo tipo è compatibile con il principio di sostituibilità di Liskov.
+- **ereditarietà per variazione funzionale**: la sottoclasse ridefinisce (effettua l'_overriding_) di alcuni metodi ereditati dalla superclasse. _Anche questo tipo è compatibile con il principio di sostituibilità di Liskov_.
 
   ![](../../resources/map/UML/UML%20-%20Ereditarieta'%20funzionale.png)
 
