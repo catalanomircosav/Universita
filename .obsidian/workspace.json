@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 382.5
+    "width": 382.5,
+    "collapsed": true
   },
   "right": {
     "id": "11d4287befb9fcba",
@@ -181,12 +182,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cd33f40c14a11b3b",
+  "active": "b578c5caccf14854",
   "lastOpenFiles": [
-    "Appunti/Metodi Avanzati di Programmazione/📁 2 – Astrazione nella Programmazione/Astrazione nella Programmazione.md",
     "Appunti/Metodi Avanzati di Programmazione/3 – Paradigma OOP/Il Paradigma Orientato agli Oggetti.md",
-    "Appunti/Metodi Avanzati di Programmazione/📁 2 – Astrazione nella Programmazione/ADA.md",
-    "Appunti/Metodi Avanzati di Programmazione/📁 1 – Astrazione nella Progettazione/Astrazione nella Progettazione.md",
+    "Appunti/Metodi Avanzati di Programmazione/Piano di Studio MAP.md",
+    "Appunti/Metodi Avanzati di Programmazione/2 – Astrazione nella Programmazione/Astrazione nella Programmazione.md",
+    "Appunti/Metodi Avanzati di Programmazione/2 – Astrazione nella Programmazione/ADA.md",
+    "Appunti/Metodi Avanzati di Programmazione/1 – Astrazione nella Progettazione/Astrazione nella Progettazione.md",
     "Appunti/Metodi Avanzati di Programmazione/3 – Paradigma OOP",
     "Appunti/Metodi Avanzati di Programmazione/Untitled.canvas",
     "resources/map/UML/UML - Ereditarieta' funzionale.png",
@@ -202,7 +204,6 @@
     "resources/map/UML",
     "resources/map",
     "resources",
-    "Appunti/Metodi Avanzati di Programmazione/Piano di Studio MAP.md",
     "Appunti/Metodi per il Ritrovamento dell'Informazione/Proprieta' dei Logaritmi.md",
     "Appunti/Reti di Calcolatori/🖥️ 3 - Architetture Parallele/Architetture Parallele.md",
     "Appunti/Reti di Calcolatori/La linea di Comandi di Windows.md",
@@ -212,8 +213,8 @@
     "Appunti/Metodi per il Ritrovamento dell'Informazione/📁 2 - Intelligent Information Retrieval/Information Retrieval.md",
     "Archivio/immagini",
     "conflict-files-obsidian-git.md",
-    "Appunti/Metodi Avanzati di Programmazione/📁 1 – Astrazione nella Progettazione",
-    "Appunti/Metodi Avanzati di Programmazione/📁 2 – Astrazione nella Programmazione",
+    "Appunti/Metodi Avanzati di Programmazione/1 – Astrazione nella Progettazione",
+    "Appunti/Metodi Avanzati di Programmazione/2 – Astrazione nella Programmazione",
     "Appunti/Metodi Avanzati di Programmazione/Astrazione nella Progettazione.md",
     "Appunti/Metodi Avanzati di Programmazione/Astrazione nella Programmazione.md",
     "Appunti/Metodi per il Ritrovamento dell'Informazione/📁 3 - Relevance Feedback/Relevance Feedback.md",
