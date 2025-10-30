@@ -8,16 +8,16 @@ Una **classe** permette di definire tipi di dati e permettono la creazione di **
 Una classe è composta da:
 - un insieme di **attributi**, ossia *variabili*/*costanti* che definiscono le caratteristiche degli oggetti di quella classe.
 - un insieme di **metodi**, ossia *procedure* che operano sugli attributi.
-![[Pasted image 20251030170944.png]]
+![[UML - Classe.png]]
 ### **Oggetti**
 Un oggetto e' una istanza di una classe. Esso e' dotato di tutti gli attributi e metodi definiti dalla classe e agisce come un *fornitore* di "*messaggi*", che il codice eseguibile del programma può attivare su richiesta. Inviare un messaggio significa invocare un metodo su quell'oggetto.
 Ogni oggetto ha una sua **identità**, rappresentata da un **identificatore di oggetto (*OID*)**, che lo identifica univocamente e nella maggior parte dei casi e' rappresentato dal primo indirizzo di memoria su cui risiede l'oggetto.
-![[Pasted image 20251030171002.png]]
+![[UML - Istanza.png]]
 ### **Attributi**
 Gli **attributi** si distinguono in base al loro *scope* (ambito d'azione):
 - **attributi d'istanza**: sono associati a un oggetto e hanno vita pari a quella dell'oggetto;
 - **attributi di classe**: sono associati alla classe e condivisi tra tutti gli oggetti di quella classe.
-![[Pasted image 20251030171021.png]]
+![[UML - Attributo.png]]
 ### **Metodi**
 Anche i metodi si distinguono in base al loro scope:
 - **metodi di istanza**: operano su un attributo dell'oggetto, pertanto devono essere invocati solo specificando l'oggetto.
@@ -28,7 +28,7 @@ I **metodi** possono essere ulteriormente classificati in:
 - **metodi di accesso**: restituiscono gli attributi dell'oggetto in forma di informazione.
 - **metodi di trasformazione**: modificano gli attributi dell'oggetto.
 - **metodi distruttori**: invocati per distruggere (e quindi *rimuovere dalla memoria*) un oggetto.
-![[Pasted image 20251030171054.png]]
+![[UML - Metodi.png]]
 ### **Visibilità e Molteplicità'**
 Gli attributi e i metodi di una classe possono avere diversi livelli di visibilità:
 - **attributo / metodo pubblico** (`+`): quando può essere **visto** (*utilizzato, invocato, modificato, ecc.*) anche da altre classi;
@@ -39,18 +39,18 @@ Gli attributi e i metodi di una classe possono avere diversi livelli di visibili
 Con il termine ***molteplicità di classe*** si intende il numero di oggetti che possono essere del tipo di classe. Generalmente non vi è imposto un limite, tuttavia si possono distinguere:
 - **classi singleton (*singoletto*)**: classi con molteplicità `1`, ovvero classi che non permettono di avere più di un oggetto istanziato.
 - **classi con molteplicità $n$**: classi che possono avere esattamente $n$ oggetti contemporaneamente.
-![[Pasted image 20251030171336.png]]
+![[UML - Molteplicita'.png]]
 Con il termine di **molteplicità di attributo** si indica il numero massimo di attributi di un determinato tipo che una classe può avere.
-![[Pasted image 20251030171348.png]]
+![[UML - Molteplicita di attributi.png]]
 ### **Classi attive**
 Una classe si attiva quando gli oggetti di quella classe sono attivi. Un oggetto si dice **attivo** quando esso ha un thread e può far partire un thread concorrente. Una classe attiva è simile ad una classe classica con l'eccezione che le sue istanze rappresentano elementi il cui comportamento e' concorrente con gli altri.
-![[Pasted image 20251030171403.png]]
+![[UML - Classe Attiva.png]]
 ### **Classi template**
 Una classe template definisce una **famiglia di classi parametrizzate**. Una classe di questo tipo non e' utilizzabile direttamente, ma va prima specificato il tipo. (`generic` in **Java**)
-![[Pasted image 20251030171410.png]]
+![[UML - Classe Template.png]]
 ### **Classi astratte**
 Una classe astratta e' una classe non completamente specificata, vale a dire che almeno un metodo di quella classe non ha specificato l'implementazione, ma solo la firma. Per questo motivo, una classe astratta non può essere istanziata.
-![[Pasted image 20251030171509.png]]
+![[UML - Classe Astratta.png]]
 #### **Interfacce**
 Una interfaccia è la descrizione del comportamento degli oggetti senza specificare alcuna implementazione. E' una collezione di operazioni, ovvero di servizi che possono essere richiesti.
 - Similmente ad una classe, può avere un numero qualsiasi di operazioni;
@@ -61,17 +61,17 @@ Una interfaccia è la descrizione del comportamento degli oggetti senza specific
 Poiché non possono sorgere conflitti tra interfacce, a una classe è permesso di realizzare più interfacce.
 Infine, più classi possono implementare la stessa interfaccia.
 
-![[Pasted image 20251030171551.png]]
+![[UML - Interfaccia.png]]
 ### **Classi finali**
 Una classe finale è una classe che non può essere ulteriormente specializzata. Si definisce una classe di questo tipo quando il comportamento della classe stessa deve essere ben stabilito per ragioni di **affidabilità**.
-![[Pasted image 20251030171529.png]]
+![[UML - Classe Finale.png]]
 ### **Classi interne**
 Una classe interna è una classe la cui dichiarazione si trova all'interno di un'altra classe ospite.
 - Una classe di questo tipo non può essere privata.
 - Può accedere a tutti i metodi e i campi della classe ospitante, mentre la classe ospitante può vedere solo la parte pubblica della *inner class*.
 - Un oggetto di una classe inner non può esistere se non esiste un oggetto della classe ospitante. 
 - Non può avere campi statici.
-![[Pasted image 20251030171624.png]]
+![[UML - Classe Interna.png]]
 ____
 ### **Ereditarietà**
 Il meccanismo dell'ereditarietà permette di definire una nuova classe (*sottoclasse*) a partire da una classe esistente (*superclasse*), ereditandone attributi e metodi.

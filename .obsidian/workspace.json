@@ -11,14 +11,12 @@
             "id": "b578c5caccf14854",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Appunti/Metodi Avanzati di Programmazione/Il Paradigma Orientato agli Oggetti.md",
-                "mode": "source",
-                "source": false
+                "file": "resources/map/UML/UML - Attributo.png"
               },
-              "icon": "lucide-file",
-              "title": "Il Paradigma Orientato agli Oggetti"
+              "icon": "lucide-image",
+              "title": "UML - Attributo"
             }
           }
         ]
@@ -78,8 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "11d4287befb9fcba",
@@ -182,19 +179,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b578c5caccf14854",
+  "active": "cd33f40c14a11b3b",
   "lastOpenFiles": [
-    "Pasted image 20251030171624.png",
-    "Pasted image 20251030171551.png",
-    "Pasted image 20251030171529.png",
-    "Pasted image 20251030171509.png",
-    "Pasted image 20251030171410.png",
-    "Pasted image 20251030171403.png",
-    "Pasted image 20251030171348.png",
-    "Pasted image 20251030171336.png",
-    "Pasted image 20251030171054.png",
-    "Pasted image 20251030171021.png",
-    "Pasted image 20251030171002.png",
+    "resources/map/UML/UML - Classe Interna.png",
+    "resources/map/UML",
+    "resources/map",
+    "resources/map/UML/UML - Interfaccia.png",
+    "resources/map/UML/UML - Classe Finale.png",
+    "resources/map/UML/UML - Classe Astratta.png",
+    "resources/map/UML/UML - Classe Template.png",
+    "resources/map/UML/UML - Classe Attiva.png",
+    "resources/map/UML/UML - Molteplicita di attributi.png",
+    "resources/map/UML/UML - Molteplicita'.png",
+    "resources/map/UML/UML - Metodi.png",
+    "resources/map/UML/UML - Attributo.png",
+    "resources/map/UML/UML - Istanza.png",
+    "Appunti/Metodi Avanzati di Programmazione/Il Paradigma Orientato agli Oggetti.md",
+    "resources",
     "Appunti/Metodi Avanzati di Programmazione/Piano di Studio MAP.md",
     "Appunti/Metodi per il Ritrovamento dell'Informazione/Proprieta' dei Logaritmi.md",
     "Appunti/Reti di Calcolatori/🖥️ 3 - Architetture Parallele/Architetture Parallele.md",
@@ -202,7 +203,6 @@
     "Appunti/Reti di Calcolatori/Glossario.md",
     "Appunti/Metodi Avanzati di Programmazione/Astrazione nella Programmazione/ADA.md",
     "Appunti/Metodi Avanzati di Programmazione/Progettazione/Astrazione nella Progettazione.md",
-    "Appunti/Metodi Avanzati di Programmazione/Il Paradigma Orientato agli Oggetti.md",
     "Senza nome.md",
     "Senza nome 1.md",
     "Appunti/Metodi per il Ritrovamento dell'Informazione/💠 2 - Intelligent Information Retrieval/Information Retrieval.md",
@@ -227,9 +227,6 @@
     "Appunti/Metodi per il Ritrovamento dell'Informazione/⚪ 1 - Introduzione/1 - Introduzione.md",
     "Appunti/Metodi per il Ritrovamento dell'Informazione/Senza nome",
     "Appunti/Metodi per il Ritrovamento dell'Informazione/💠 2 - Intelligent Information Retrieval",
-    "Appunti/Metodi per il Ritrovamento dell'Informazione/⚪ 1 - Introduzione",
-    "immagini/reti",
-    "immagini",
     "TODO.canvas",
     "Senza nome.canvas"
   ]
