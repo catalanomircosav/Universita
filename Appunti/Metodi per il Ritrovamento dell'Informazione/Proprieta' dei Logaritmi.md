@@ -8,4 +8,4 @@ ___
 - $\log_a (xb) = b\cdot\log_a x$
 - $\log_b x = \frac{\log_a x}{\log_a b}$ 
 - $\log_x \quad\text{is typically}\quad \log_{10} x$
-- $\ln x$ is typically $log_e x$ $(e = 2.7182)$
+- $\ln x \quad\text{is typically}\quad log_e x$ $(e = 2.7182)$

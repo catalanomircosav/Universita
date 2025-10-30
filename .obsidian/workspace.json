@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti/Reti di Calcolatori/🖥️ 3 - Architetture Parallele/Architetture Parallele.md",
+                "file": "Appunti/Metodi Avanzati di Programmazione/Il Paradigma Orientato agli Oggetti.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Architetture Parallele"
+              "title": "Il Paradigma Orientato agli Oggetti"
             }
           }
         ]
@@ -54,14 +54,14 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Ricerca"
+              "title": "Search"
             }
           },
           {
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "11d4287befb9fcba",
@@ -183,27 +184,29 @@
   },
   "active": "b578c5caccf14854",
   "lastOpenFiles": [
+    "Pasted image 20251030171624.png",
+    "Pasted image 20251030171551.png",
+    "Pasted image 20251030171529.png",
+    "Pasted image 20251030171509.png",
+    "Pasted image 20251030171410.png",
+    "Pasted image 20251030171403.png",
+    "Pasted image 20251030171348.png",
+    "Pasted image 20251030171336.png",
+    "Pasted image 20251030171054.png",
+    "Pasted image 20251030171021.png",
+    "Pasted image 20251030171002.png",
+    "Appunti/Metodi Avanzati di Programmazione/Piano di Studio MAP.md",
     "Appunti/Metodi per il Ritrovamento dell'Informazione/Proprieta' dei Logaritmi.md",
+    "Appunti/Reti di Calcolatori/🖥️ 3 - Architetture Parallele/Architetture Parallele.md",
     "Appunti/Reti di Calcolatori/La linea di Comandi di Windows.md",
     "Appunti/Reti di Calcolatori/Glossario.md",
-    "Appunti/Metodi Avanzati di Programmazione/Piano di Studio MAP.md",
     "Appunti/Metodi Avanzati di Programmazione/Astrazione nella Programmazione/ADA.md",
     "Appunti/Metodi Avanzati di Programmazione/Progettazione/Astrazione nella Progettazione.md",
     "Appunti/Metodi Avanzati di Programmazione/Il Paradigma Orientato agli Oggetti.md",
     "Senza nome.md",
     "Senza nome 1.md",
-    "Archivio/immagini/Pasted image 20251028105519.png",
     "Appunti/Metodi per il Ritrovamento dell'Informazione/💠 2 - Intelligent Information Retrieval/Information Retrieval.md",
     "Archivio/immagini",
-    "Archivio/immagini/Pasted image 20251028111944.png",
-    "Archivio/immagini/Pasted image 20251028111924.png",
-    "Archivio/immagini/Pasted image 20251028110806.png",
-    "Archivio/immagini/Screenshot 2025-10-28 110624.png",
-    "Archivio/immagini/Pasted image 20251028110658.png",
-    "Archivio/immagini/Pasted image 20251028110610.png",
-    "Archivio/immagini/Pasted image 20251028105645.png",
-    "Archivio/immagini/Pasted image 20251028105611.png",
-    "Archivio/immagini/Pasted image 20251028105603.png",
     "Appunti/Metodi Avanzati di Programmazione/Astrazione nella Programmazione/Astrazione nella Programmazione.md",
     "conflict-files-obsidian-git.md",
     "Appunti/Metodi Avanzati di Programmazione/Progettazione",
@@ -219,13 +222,11 @@
     "Appunti/Metodi Avanzati di Programmazione/Appendici/a. Tecniche di progettazione.md",
     "Appunti/Metodi Avanzati di Programmazione/2. Astrazione nella programmazione.md",
     "Appunti/Calcolabilita e Complessita/1. Automi Finiti.md",
-    "Appunti/Reti di Calcolatori/🖥️ 3 - Architetture Parallele/Architetture Parallele.md",
     "Appunti/Reti di Calcolatori/🖥️ 3 - Architetture Parallele",
     "Appunti/Reti di Calcolatori/⚙️ 2 - Architettura protocollare/Modello TCP-IP.md",
     "Appunti/Metodi per il Ritrovamento dell'Informazione/⚪ 1 - Introduzione/1 - Introduzione.md",
     "Appunti/Metodi per il Ritrovamento dell'Informazione/Senza nome",
     "Appunti/Metodi per il Ritrovamento dell'Informazione/💠 2 - Intelligent Information Retrieval",
-    "n.md",
     "Appunti/Metodi per il Ritrovamento dell'Informazione/⚪ 1 - Introduzione",
     "immagini/reti",
     "immagini",
